@@ -1,0 +1,50 @@
+.tile {
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(40,40,40, 0);
+    width: 100px;
+
+    -webkit-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.tile:hover {
+    border: 20px black;
+    background: rgba(40,40,40, 0.1);
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#date {
+    font-weight: 300;
+    font-size: 0.6rem;
+}
+
+#title {
+    font-weight: 400;
+}
+
+p {
+    font-size: 0.5rem;
+    text-align: justify;
+    line-height: 1.2;
+    padding: 2px;
+}
+
+.tag {
+    font-size: 0.7rem;
+    font-style:italic;
+    display: inline;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 88%;
+    transition: background-size 0.15s ease-in;
+  }
+
+.tag:hover {
+    background-size: 100% 88%;
+  }
+  
