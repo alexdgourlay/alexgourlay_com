@@ -107,6 +107,7 @@ function idleLine(index, sep, svgWidth, svgHeight) {
             return `M 0 ${halfH + sep} L ${halfW - sep} ${halfH + sep} L ${halfW - sep} ${svgHeight}`;
         case 3:
             return `M 0 ${halfH - sep} L ${halfW - sep} ${halfH - sep} L ${halfW - sep} 0`;
-
+        default:
+            return '';
     }
 }

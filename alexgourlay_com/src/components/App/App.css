@@ -1,0 +1,15 @@
+.container {
+    float: right;
+    width: 400px;
+    height: 1000px;
+    border: dashed blue 1px;
+}
+
+.container img {
+    max-height: 500%;
+    max-width: 100%;
+}
+
+.tiles {
+    float: left;
+}
