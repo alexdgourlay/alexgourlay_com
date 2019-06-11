@@ -2,9 +2,10 @@ import React from 'react';
 
 import CrossHairs from '../CrossHairs/CrossHairs';
 import HeadBar from '../HeadBar/HeadBar';
+import PreviewPane from '../PreviewPane/PreviewPane'
 import ProjectTile from '../ProjectTile/ProjectTile';
 
-import projects from '../../resources/projects.json'
+import projects from '../../projects.json';
 
 import './App.css'
 
@@ -16,7 +17,7 @@ class App extends React.Component {
 
     this.state = {
       projects: [],
-      tileHovered: null,
+      projectHovered: null,
     }
 
     this.handleTileEnter = this.handleTileEnter.bind(this);
@@ -24,24 +25,32 @@ class App extends React.Component {
   }
 
   componentWillMount() {
+    // Load Project data into state.
     this.setState({
       projects: projects
     })
   }
 
-  handleTileEnter(projectID) {
+  handleTileEnter(project) {
     this.setState({
-      tileHovered: projectID,
+      projectHovered: project,
     })
   }
 
-  handleTileExit(projectID) {
+  handleTileExit() {
     this.setState({
-      tileHovered: null
+      projectHovered: null
     })
   }
+
 
   render() {
+
+    // let previewPane;
+    // this.state.projectHovered !== null
+    //   ? previewPane = <PreviewPane project={this.state.projectHovered} />
+    //   : previewPane = <div />
+
     return (
       <div className="App">
         <CrossHairs
@@ -59,11 +68,8 @@ class App extends React.Component {
               ))
             }
           </div>
-          <div className="container">
-            <img className="img"
-              alt=''
-              src={require('../../resources/projects/0_AXPendula/A_AXPendula.JPG')}
-            />
+          <div className="preview-container">
+            <PreviewPane project={this.state.projectHovered} />
           </div>
         </CrossHairs>
       </div>

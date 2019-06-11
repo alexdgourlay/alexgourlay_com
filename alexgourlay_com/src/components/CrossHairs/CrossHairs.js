@@ -42,7 +42,8 @@ export default class CrossHairs extends React.Component {
                 {/* Check whether mouse is on screen. */}
                 {this.state.mouseOnScreen ?
                     // Check if tile is being hovered over
-                    this.props.tileHovered >= 0 ?
+                    // this.props.tileHovered >= 0 ?
+                    true ?
                         // IF NOT HOVERED OVER
                         <svg height={this.svgWidth} width={this.svgHeight} style={{
                             position: 'fixed',
@@ -90,7 +91,6 @@ const CrossHairSVG = (props) => (
             strokeWidth={props.strokeWidth} fill="none" />
         <path id="lineAB" d={idleLine(3, props.sep, props.svgWidth, props.svgHeight)} stroke={props.stroke}
             strokeWidth={props.strokeWidth} fill="none" />
-
     </g>
 )
 

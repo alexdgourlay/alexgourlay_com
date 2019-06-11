@@ -24,6 +24,7 @@
 
 #title {
     font-weight: 400;
+    max-width: 100%;
 }
 
 p {

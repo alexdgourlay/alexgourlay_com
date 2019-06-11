@@ -6114,11 +6114,6 @@ kleur@^3.0.2:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-konva@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/konva/-/konva-3.3.3.tgz#26c703052a9de84d6364891dae56805084f6bdb9"
-  integrity sha512-nDkFa7OVApCAohY30yoKpTMrYbbK8+p+wjYHkU+jrtKL3MhP5yCByNIrkyjca1EeP++K+2e6fslgU8kbeJNBxw==
-
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/last-call-webpack-plugin/-/last-call-webpack-plugin-3.0.0.tgz#9742df0e10e3cf46e5c0381c2de90d3a7a2d7555"
@@ -7297,11 +7292,6 @@ pirates@^4.0.1:
   integrity sha512-WuNqLTbMI3tmfef2TKxlQmAiLHKtFhlsCZnPIpuv2Ow0RDVO8lfy1Opf4NUzlMXLjPl+Men7AuVdX6TA+s+uGA==
   dependencies:
     node-modules-regexp "^1.0.0"
-
-pixi@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/pixi/-/pixi-0.3.1.tgz#858cd6164a32a1e4b41192cdf5c6d98209300ba8"
-  integrity sha1-hYzWFkoyoeS0EZLN9cbZggkwC6g=
 
 pkg-dir@^1.0.0:
   version "1.0.0"

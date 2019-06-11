@@ -34,8 +34,8 @@ export default class ProjectTile extends React.Component {
 
         return (
             <div className="tile"
-                onMouseEnter={() => (this.props.handleTileEnter(project.id, this.state.boundingRect))}
-                onMouseLeave={() => (this.props.handleTileExit(project.id))}
+                onMouseEnter={() => (this.props.handleTileEnter(project))}
+                onMouseLeave={() => (this.props.handleTileExit())}
                 ref={this.selector}
             >
                 <div id="date">{project.date}</div>
