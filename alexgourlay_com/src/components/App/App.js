@@ -52,7 +52,7 @@ class App extends React.Component {
         <CrossHairs
           tileHovered={this.state.tileHovered} >
 
-          {/* <HeadBar /> */}
+          <HeadBar />
           <div className="tiles">
             {
               this.state.projects.map((project, i) => (
