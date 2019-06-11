@@ -16,6 +16,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      github_url : 'https://raw.githubusercontent.com/alexdgourlay/alexgourlay.com/master/alexgourlay_com',
       projects: [],
       projectHovered: null,
     }
@@ -46,11 +47,6 @@ class App extends React.Component {
 
   render() {
 
-    // let previewPane;
-    // this.state.projectHovered !== null
-    //   ? previewPane = <PreviewPane project={this.state.projectHovered} />
-    //   : previewPane = <div />
-
     return (
       <div className="App">
         <CrossHairs
@@ -69,7 +65,9 @@ class App extends React.Component {
             }
           </div>
           <div className="preview-container">
-            <PreviewPane project={this.state.projectHovered} />
+            <PreviewPane 
+            github_url={this.state.github_url}
+            project={this.state.projectHovered} />
           </div>
         </CrossHairs>
       </div>
