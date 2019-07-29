@@ -19,5 +19,12 @@
         "title" : "Horizons Studio",
         "tags" : ["Virtual Reality", "Music Tech", "PureData"],
         "img" : "2_Horizons/HD_ShoalFishStill.jpg"
+    },
+    {
+        "id" : 3,
+        "date" : "21-02-2019",
+        "title" : "VitaRun",
+        "tags" : ["App Dev", "Android", "Smart Healthcare"],
+        "img" : "2_Horizons/HD_ShoalFishStill.jpg"
     }
 ]

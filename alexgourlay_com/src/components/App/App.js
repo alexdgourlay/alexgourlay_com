@@ -2,10 +2,11 @@ import React from 'react';
 
 import CrossHairs from '../CrossHairs/CrossHairs';
 import HeadBar from '../HeadBar/HeadBar';
-import PreviewPane from '../PreviewPane/PreviewPane'
+import PreviewPane from '../PreviewPane/PreviewPane';
 import ProjectTile from '../ProjectTile/ProjectTile';
+import ConnectFooter from '../ConnectFooter/ConnectFooter';
 
-import projects from '../../projects.json';
+import projects from '../../data/projects.json';
 
 import './App.css'
 
@@ -16,7 +17,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      github_url : 'https://raw.githubusercontent.com/alexdgourlay/alexgourlay.com/master/alexgourlay_com',
+      github_url: 'https://raw.githubusercontent.com/alexdgourlay/alexgourlay.com/master/alexgourlay_com',
       projects: [],
       projectHovered: null,
     }
@@ -48,28 +49,31 @@ class App extends React.Component {
   render() {
 
     return (
-      <div className="App">
+      <div id="App">
         <CrossHairs
-          tileHovered={this.state.tileHovered} >
+          tileHovered={this.state.projectHovered} >
 
           <HeadBar />
-          <div className="tiles">
-            {
-              this.state.projects.map((project, i) => (
-                <ProjectTile
-                  key={project.id}
-                  project={project}
-                  handleTileEnter={this.handleTileEnter}
-                  handleTileExit={this.handleTileExit} />
-              ))
-            }
-          </div>
-          <div className="preview-container">
-            <PreviewPane 
-            github_url={this.state.github_url}
-            project={this.state.projectHovered} />
+          <div id="main_body">
+            <div className="tiles">
+              {
+                this.state.projects.map((project, i) => (
+                  <ProjectTile
+                    key={project.id}
+                    project={project}
+                    handleTileEnter={this.handleTileEnter}
+                    handleTileExit={this.handleTileExit} />
+                ))
+              }
+            </div>
+            <div id="preview-container">
+              <PreviewPane
+                github_url={this.state.github_url}
+                project={this.state.projectHovered} />
+            </div>
           </div>
         </CrossHairs>
+        <ConnectFooter />
       </div>
     );
   }

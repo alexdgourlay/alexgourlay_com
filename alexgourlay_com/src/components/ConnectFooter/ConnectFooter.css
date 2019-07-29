@@ -1,0 +1,16 @@
+#container {
+    height:60px;
+    margin: 0 auto;
+    border: dashed blue 2px;
+    /* display: flex; */
+    justify-content: center;
+}
+
+#container div {
+    display: inline-block;
+    padding: 5px;
+}
+
+.icon {
+    size: 300px;
+}

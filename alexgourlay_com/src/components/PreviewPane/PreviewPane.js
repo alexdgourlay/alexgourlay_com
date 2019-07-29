@@ -5,7 +5,7 @@ const PreviewPane = (props) => {
 
     if (props.project !== null) {
         return (
-            <img
+            <img 
                 alt='Project Preview'
                 src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
         )
