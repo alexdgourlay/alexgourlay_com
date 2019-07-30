@@ -4,31 +4,29 @@ import imghdr
 
 RES_DIR = "../alexgourlay_com/resources/"
 
-for root, dirs, files in os.walk(RES_DIR):
-    for file in files:
-        if imghdr.what(os.path.join(root, file)):
-            print("Image Found: {}".format(file))
-
-# Asigned height of optimised images.
+# Height of optimised images.
 height = 1000
+# Quality of compression of images
+quality = 90
 
 # Function for printing number in readable byte format e.g. '1.2KiB'
+
+
 def sizeof_fmt(num, suffix='b'):
-    for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
+    for unit in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
         if abs(num) < 1024.0:
             return "%3.1f%s%s" % (num, unit, suffix)
         num /= 1024.0
     return "%.1f%s%s" % (num, 'Yi', suffix)
 
-def run():
-    IN_PATH = './murzuq.jpg'
 
-    im = Image.open(IN_PATH)
+def optimise_image(path, height, quality):
 
+    im = Image.open(path)
     # print("Original: " + "{}, ".format(im.size) + sizeof_fmt(os.path.getsize(IN_PATH)))
 
     # Convert to RGB format if not already in that format.
-    if not IN_PATH.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
+    if not path.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):
         im = im.convert("RGB")
 
     im_size = im.size
@@ -36,9 +34,24 @@ def run():
 
     out = im.resize((height, round(im_ratio*height)), Image.ANTIALIAS)
 
-    OUT_PATH = "murzuq_opt.jpg"
-    out.save(OUT_PATH, quality= 90)
+    split_path = os.path.split(path)
+    out_name = "OPT_" + split_path[1]
+    OUT_PATH = os.path.join(split_path[0], out_name)
+    out.save(OUT_PATH, quality=quality)
 
-    im = Image.open(OUT_PATH)
+    # im = Image.open(OUT_PATH)
     # print("Optimised: " + "{}, ".format(im.size) + sizeof_fmt(os.path.getsize(OUT_PATH)))
 
+
+def run():
+    for root, dirs, files in os.walk(RES_DIR):
+        for file in files:
+
+            IN_PATH = os.path.join(root, file)
+
+            if imghdr.what(IN_PATH) and file[:3] not in "OPT":
+                optimise_image(IN_PATH, height, quality)
+                print("Image Optimised: {}".format(file))
+
+
+run()
