@@ -1,4 +1,5 @@
 import React from 'react';
+// import Autoresponsive from 'autoresponsive-react'
 
 import CrossHairs from '../CrossHairs/CrossHairs';
 import HeadBar from '../HeadBar/HeadBar';
@@ -36,6 +37,7 @@ class App extends React.Component {
   handleTileEnter(project) {
     this.setState({
       projectHovered: project,
+      projectEntered: true,
     })
   }
 

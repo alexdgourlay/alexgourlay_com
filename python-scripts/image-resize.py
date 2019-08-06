@@ -9,9 +9,10 @@ height = 1000
 # Quality of compression of images
 quality = 90
 
+# Prefix for marking optimised images.
+namePrefix = "OPT"
+
 # Function for printing number in readable byte format e.g. '1.2KiB'
-
-
 def sizeof_fmt(num, suffix='b'):
     for unit in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
         if abs(num) < 1024.0:
@@ -20,7 +21,7 @@ def sizeof_fmt(num, suffix='b'):
     return "%.1f%s%s" % (num, 'Yi', suffix)
 
 
-def optimise_image(path, height, quality):
+def optimise_image(path, height, quality, namePrefix):
 
     im = Image.open(path)
     # print("Original: " + "{}, ".format(im.size) + sizeof_fmt(os.path.getsize(IN_PATH)))
@@ -35,7 +36,7 @@ def optimise_image(path, height, quality):
     out = im.resize((height, round(im_ratio*height)), Image.ANTIALIAS)
 
     split_path = os.path.split(path)
-    out_name = "OPT_" + split_path[1]
+    out_name = namePrefix + split_path[1]
     OUT_PATH = os.path.join(split_path[0], out_name)
     out.save(OUT_PATH, quality=quality)
 
@@ -49,7 +50,7 @@ def run():
 
             IN_PATH = os.path.join(root, file)
 
-            if imghdr.what(IN_PATH) and file[:3] not in "OPT":
+            if imghdr.what(IN_PATH) and file[:3] not in namePrefix:
                 optimise_image(IN_PATH, height, quality)
                 print("Image Optimised: {}".format(file))
 

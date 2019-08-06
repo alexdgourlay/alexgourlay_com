@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Class for mouse tracking cross hair graphic.
 export default class CrossHairs extends React.Component {
 
     constructor(props) {

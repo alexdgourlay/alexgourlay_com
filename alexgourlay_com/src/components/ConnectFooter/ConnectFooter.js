@@ -24,7 +24,7 @@ const ConnectFooter = (props) => {
                 onClick={() => window.open(links.linkedin)}/>
             </div>
             <div>
-                <p>Custom Website Design, built using React.js</p>
+                <p>Designed and built by me, using React.js</p>
             </div>
         </div>
         
