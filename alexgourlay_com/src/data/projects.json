@@ -1,27 +1,27 @@
 [
     {
-        "id" : 0,
+        "id" : "0",
         "date" : "13-02-2018",
         "title" : "AXPendula",
         "tags" : ["Audio Visual", "Max MSP", "Installation"],
         "img" : "0_AXPendula/OPT_A_AXPendula.JPG"
     },
     {
-        "id" : 1,
+        "id" : "1",
         "date" : "21-04-2019",
         "title" : "OrBit",
         "tags" : ["Product Design", "Music Tech", "Ableton"],
         "img" : "1_OrBit/OPT_A_OrBit.jpg"
     },
     {
-        "id" : 2,
+        "id" : "2",
         "date" : "21-07-2018",
         "title" : "Horizons Studio",
         "tags" : ["Virtual Reality", "Music Tech", "PureData"],
         "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
     },
     {
-        "id" : 3,
+        "id" : "3",
         "date" : "21-02-2019",
         "title" : "VitaRun",
         "tags" : ["App Dev", "Android", "Smart Healthcare"],

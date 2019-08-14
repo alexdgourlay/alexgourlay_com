@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectTile.css';
+import { Link } from 'react-router-dom';
 
 export default class ProjectTile extends React.Component {
 
@@ -7,7 +8,7 @@ export default class ProjectTile extends React.Component {
         super(props);
 
         this.state = {
-            boundingRect:null
+            boundingRect: null
         }
 
         // Reference for finding bounding box.
@@ -19,30 +20,36 @@ export default class ProjectTile extends React.Component {
 
     componentDidMount = () => {
         this.setBoundingRect();
-    
+
         window.addEventListener("resize", () => this.setBoundingRect());
     };
 
     setBoundingRect() {
         this.setState({
-            boundingRect:this.selector.current.getBoundingClientRect()
+            boundingRect: this.selector.current.getBoundingClientRect()
         })
     }
-    
+
     render() {
         let project = this.props.project;
+        let titleNoSpaces = project.title.replace(/\s/g, '');
+
+        // console.log(`${this.props.match.url}/Projects/${titleNoSpaces}`);
 
         return (
             <div className="tile"
                 onMouseEnter={() => (this.props.handleTileEnter(project))}
                 onMouseLeave={() => (this.props.handleTileExit())}
+
                 ref={this.selector}
             >
                 <div id="date">{project.date}</div>
-                <div id="title">{project.title}</div>
+                <Link to={`${this.props.match.url}Projects/${titleNoSpaces}`} >
+                    <div id="title">{project.title}</div>
+                </Link>
 
                 {project.tags.map((tag, index) => (
-                    <p className="tag">
+                    <p className="tag" key={index}>
                         {index === project.tags.length - 1 ?
                             `${tag}`.toLowerCase()
                             : `${tag}, `.toLowerCase()}

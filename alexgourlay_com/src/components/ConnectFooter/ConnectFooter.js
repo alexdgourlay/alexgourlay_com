@@ -9,18 +9,18 @@ import "./ConnectFooter.css"
 
 const ConnectFooter = (props) => {
 
+    let iconSize = 25;
+
     return (
         <div id="container">
             <div>
             <GoMarkGithub
                 className="icon"
-                size= {30}
+                size= {iconSize}
                 onClick={() => window.open(links.github)} />
-            </div>
-            <div>
             <TiSocialLinkedin
                 className='icon'
-                size = {30} 
+                size = {iconSize} 
                 onClick={() => window.open(links.linkedin)}/>
             </div>
             <div>

@@ -2,17 +2,21 @@
     height:60px;
     margin: 0 auto;
     border: dashed blue 2px;
-    /* display: flex; */
-    justify-content: center;
 }
 
 #container div {
+    justify-content: center;
     display: inline-table;
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 20px;
+}
+
+p {
+    font-size: 10px;
 }
 
 .icon {
-    size: 300px;
+    margin: 5px;
     color: grey;
 }
 

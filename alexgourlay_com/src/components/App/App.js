@@ -1,83 +1,27 @@
 import React from 'react';
-// import Autoresponsive from 'autoresponsive-react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import CrossHairs from '../CrossHairs/CrossHairs';
 import HeadBar from '../HeadBar/HeadBar';
-import PreviewPane from '../PreviewPane/PreviewPane';
-import ProjectTile from '../ProjectTile/ProjectTile';
-import ConnectFooter from '../ConnectFooter/ConnectFooter';
 
-import projects from '../../data/projects.json';
-
-import './App.css'
+import PageHome from '../PageHome/PageHome';
+import PageAboutMe from '../PageAboutMe/PageAboutMe';
+import PageProject from '../PageProject/PageProject';
+import Page404 from '../Page404/Page404'
 
 class App extends React.Component {
 
-  constructor(props) {
-
-    super(props);
-
-    this.state = {
-      github_url: 'https://raw.githubusercontent.com/alexdgourlay/alexgourlay.com/master/alexgourlay_com',
-      projects: [],
-      projectHovered: null,
-    }
-
-    this.handleTileEnter = this.handleTileEnter.bind(this);
-    this.handleTileExit = this.handleTileExit.bind(this);
-  }
-
-  componentWillMount() {
-    // Load Project data into state.
-    this.setState({
-      projects: projects
-    })
-  }
-
-  handleTileEnter(project) {
-    this.setState({
-      projectHovered: project,
-      projectEntered: true,
-    })
-  }
-
-  handleTileExit() {
-    this.setState({
-      projectHovered: null
-    })
-  }
-
-
   render() {
-
     return (
-      <div id="App">
-        <CrossHairs
-          tileHovered={this.state.projectHovered} >
-
-          <HeadBar />
-          <div id="main_body">
-            <div className="tiles">
-              {
-                this.state.projects.map((project, i) => (
-                  <ProjectTile
-                    key={project.id}
-                    project={project}
-                    handleTileEnter={this.handleTileEnter}
-                    handleTileExit={this.handleTileExit} />
-                ))
-              }
-            </div>
-            <div id="preview-container">
-              <PreviewPane
-                github_url={this.state.github_url}
-                project={this.state.projectHovered} />
-            </div>
-          </div>
-        </CrossHairs>
-        <ConnectFooter />
-      </div>
-    );
+      <Router>
+        <HeadBar />
+        <Switch>
+          <Route exact path="/" component={PageHome} />
+          <Route exact path="/AboutMe" component={PageAboutMe} />
+          <Route path="/Projects/:projectTitle" exact component={PageProject} />
+          <Route component={Page404} />
+        </Switch>
+      </Router>
+    )
   }
 }
 
