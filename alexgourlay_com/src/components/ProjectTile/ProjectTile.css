@@ -1,9 +1,8 @@
 .tile {
     font-size: 30px;
     padding: 20px;
-    background: rgba(40,40,40, 0);
-    width: 100px;
-
+    background: rgba(40, 40, 40, 0);
+    width: 150px;
     -webkit-transition: background-color 600ms linear;
     -ms-transition: background-color 600ms linear;
     transition: background-color 600ms linear;
@@ -11,7 +10,7 @@
 
 .tile:hover {
     border: 20px black;
-    background: rgba(40,40,40, 0.1);
+    background: rgba(40, 40, 40, 0.1);
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
@@ -23,29 +22,29 @@
 }
 
 #title {
-    font-weight: 400;
+    font-weight: 600;
     max-width: 100%;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.05em;
+    background-position: 0 100%;
+    transition: background-size 0.15s ease-in;
+}
+
+#title:hover {
+    background-size: 100% 88%;
 }
 
 p {
     font-size: 0.5rem;
     text-align: justify;
     line-height: 1.2;
-    padding: 2px;
+    padding: 0px;
 }
 
 .tag {
     font-size: 0.7rem;
-    font-style:italic;
+    font-style: italic;
     display: inline;
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.1em;
-    background-position: 0 88%;
-    transition: background-size 0.15s ease-in;
-  }
-
-.tag:hover {
-    background-size: 100% 88%;
-  }
-  
+    margin: 0%;
+}
