@@ -1,5 +1,8 @@
 #container {
+    position:absolute;
+    bottom:0;
     height:60px;
+    width: 100%;
     margin: 0 auto;
     border: dashed blue 2px;
 }

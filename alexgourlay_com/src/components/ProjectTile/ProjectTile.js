@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectTile.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 export default class ProjectTile extends React.Component {
 
@@ -27,9 +27,9 @@ export default class ProjectTile extends React.Component {
     };
 
     setBoundingRect() {
-        this.setState({
-            boundingRect: this.selector.current.getBoundingClientRect()
-        })
+        // this.setState({
+        //     boundingRect: this.selector.current.getBoundingClientRect()
+        // })
     }
 
     handleTileClick() {

@@ -5,19 +5,31 @@
 }
 
 #main-body {
-    height:100%;
-    display: flex;
+    /* display: inline-block; */
+    vertical-align: top; 
+    background-color: yellowgreen;
 }
 
-.tiles {
-    /* width: 300px; */
+.tileGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-content: left;
+    width: 29%;
     float: left;
+    /* border: dashed red 2px; */
+}
+
+.tileGridElement {
+    align-content: left;
+    width: 100%;
+    max-width: 200px;
 }
 
 #preview-container {
     overflow: hidden;
-    /* flex-grow: 1; */
+    float:right;
+    width: 69%;
     height: 800px;
-    max-width: 100%;
-    border: dashed blue 2px;
+    /* max-width: 90%; */
+    /* border: dashed blue 2px; */
 }

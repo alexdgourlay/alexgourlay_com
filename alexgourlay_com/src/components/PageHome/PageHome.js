@@ -52,17 +52,19 @@ class PageHome extends React.Component {
       <div id="PageHome">
         <CrossHairs
           tileHovered={this.state.projectHovered} >
-            
+
           <div id="main_body">
-            <div className="tiles">
+            <div className="tileGrid">
               {
                 this.state.projects.map((project) => (
-                  <ProjectTile
-                    key={project.id}
-                    project={project}
-                    match = {this.props.match}
-                    handleTileEnter={this.handleTileEnter}
-                    handleTileExit={this.handleTileExit} />
+                  <div className="tileGridElement">
+                    <ProjectTile
+                      key={project.id}
+                      project={project}
+                      match={this.props.match}
+                      handleTileEnter={this.handleTileEnter}
+                      handleTileExit={this.handleTileExit} />
+                  </div>
                 ))
               }
             </div>

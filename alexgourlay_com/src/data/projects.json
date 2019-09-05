@@ -26,5 +26,12 @@
         "title" : "VitaRun",
         "tags" : ["App Dev", "Android", "Smart Healthcare"],
         "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
+    },
+    {
+        "id" : "4",
+        "date" : "21-02-2019",
+        "title" : "Test Project",
+        "tags" : ["Testing", "Smart Healthcare"],
+        "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
     }
 ]

@@ -2,7 +2,7 @@
     font-size: 30px;
     padding: 20px;
     background: rgba(40, 40, 40, 0);
-    width: 150px;
+    /* width: 150px; */
     -webkit-transition: background-color 600ms linear;
     -ms-transition: background-color 600ms linear;
     transition: background-color 600ms linear;

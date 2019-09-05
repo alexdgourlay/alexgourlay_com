@@ -1,6 +1,27 @@
-img {
-    width :100%;
-    /* max-height:100%; */
-    transition: opacity .5s ease-out;
+#image {
+    /* width :100%; */
+    max-height:100%;
+    transition: opacity 2s ease-out;
     object-fit: scale-down;
+    /* padding: 200px; */
+
+    animation: kenburns 30s infinite;
+}
+
+@keyframes kenburns {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.2, 1.2, 1.2) translate3d(-30px, -20px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(1.4, 1.4, 1.4) translate3d(-200px, -10px, 0px);
+        opacity: 0;
+    }
 }
