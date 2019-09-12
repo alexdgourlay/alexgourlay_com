@@ -4,7 +4,6 @@ import React from 'react';
 import CrossHairs from '../CrossHairs/CrossHairs';
 import PreviewPane from '../PreviewPane/PreviewPane';
 import ProjectTile from '../ProjectTile/ProjectTile';
-import ConnectFooter from '../ConnectFooter/ConnectFooter';
 
 import projects from '../../data/projects.json';
 
@@ -27,6 +26,9 @@ class PageHome extends React.Component {
   }
 
   componentWillMount() {
+
+    document.title = `AG Portfolio - Home`;
+
     // Load Project data into state.
     this.setState({
       projects: projects
@@ -57,7 +59,7 @@ class PageHome extends React.Component {
             <div className="tileGrid">
               {
                 this.state.projects.map((project) => (
-                  <div className="tileGridElement">
+                  <div className="tileGridElement" key={project.id}>
                     <ProjectTile
                       key={project.id}
                       project={project}
@@ -75,7 +77,7 @@ class PageHome extends React.Component {
             </div>
           </div>
         </CrossHairs>
-        <ConnectFooter />
+
       </div>
     );
   }

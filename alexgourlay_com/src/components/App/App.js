@@ -2,10 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import HeadBar from '../HeadBar/HeadBar';
+import ConnectFooter from '../ConnectFooter/ConnectFooter.js';
 
 import PageHome from '../PageHome/PageHome';
 import PageAboutMe from '../PageAboutMe/PageAboutMe';
-import PageProject from '../PageProject/PageProject';
+import PageProjectTemplate from '../PageProject/PageProjectTemplate';
 import Page404 from '../Page404/Page404'
 
 class App extends React.Component {
@@ -17,9 +18,10 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={PageHome} />
           <Route exact path="/AboutMe" component={PageAboutMe} />
-          <Route path="/Projects/:projectTitle" exact component={PageProject} />
+          <Route path="/Projects/:projectTitle" exact component={PageProjectTemplate} />
           <Route component={Page404} />
         </Switch>
+        <ConnectFooter />
       </Router>
     )
   }

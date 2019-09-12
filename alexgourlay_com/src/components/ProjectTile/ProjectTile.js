@@ -12,6 +12,8 @@ export default class ProjectTile extends React.Component {
             redirect: false
         }
 
+        this.animation = (props.animation === undefined ? true : this.animation);
+
         // Reference for finding bounding box.
         this.selector = React.createRef();
 
@@ -39,16 +41,25 @@ export default class ProjectTile extends React.Component {
     }
 
     render() {
+
         let project = this.props.project;
         let titleNoSpaces = project.title.replace(/\s/g, '');
 
         if (this.state.redirect) {
             return (
-                <Redirect push to={`${this.props.match.url}Projects/${titleNoSpaces}`} />
+                <Redirect to={{
+                    pathname: `${this.props.match.url}Projects/${titleNoSpaces}`,
+                    
+                    // Attempt to supply project state to component
+                    // state: {
+                    //     message: 'Hello Alex',
+                    //     messageB : 3
+                    // }
+                }} />
             )
         } else {
             return (
-                <div className="tile"
+                <div className= {this.animation? "tile" : "tile_noAnimation"}
                     onMouseEnter={() => (this.props.handleTileEnter(project))}
                     onMouseLeave={() => (this.props.handleTileExit())}
                     onClick={() => this.handleTileClick(project)}

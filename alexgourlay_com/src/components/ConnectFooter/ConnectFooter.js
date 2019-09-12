@@ -13,6 +13,7 @@ const ConnectFooter = (props) => {
 
     return (
         <div id="container">
+            {/* <hr/> */}
             <div>
             <GoMarkGithub
                 className="icon"

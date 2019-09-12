@@ -16,6 +16,17 @@
     transition: background-color 200ms linear;
 }
 
+.tile_noAnimation {
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0);
+    /* width: 150px; */
+    -webkit-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+
 #date {
     font-weight: 300;
     font-size: 0.6rem;
