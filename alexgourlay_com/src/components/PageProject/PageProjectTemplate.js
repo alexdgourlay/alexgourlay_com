@@ -7,7 +7,7 @@ import './PageProject.css'
 import projects from '../../data/projects.json'
 
 const AXPendula = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
-const OrBit = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
+const OrBit = lazy(() => import('./PageProjects/PageProject_1_OrBit'));
 
 const PageProjectTemplate = (props) => {
 
@@ -23,7 +23,6 @@ const PageProjectTemplate = (props) => {
     const ProjectComp = pages[projectTitle][1];
     const project = projects[pages[projectTitle][0]];
 
-
     return (
         <Suspense fallback={<div>Loading..</div>}>
             <div>  
@@ -35,7 +34,8 @@ const PageProjectTemplate = (props) => {
                     handleTileEnter={() => {}}
                     handleTileExit={() => {}}
                     />
-                <ProjectComp />
+                <ProjectComp 
+                    project = {project}/>
             </div>
         </Suspense>
     );

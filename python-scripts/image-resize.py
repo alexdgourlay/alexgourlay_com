@@ -51,7 +51,7 @@ def run():
             IN_PATH = os.path.join(root, file)
 
             if imghdr.what(IN_PATH) and file[:3] not in namePrefix:
-                optimise_image(IN_PATH, height, quality)
+                optimise_image(IN_PATH, height, quality, 'OPT_')
                 print("Image Optimised: {}".format(file))
 
 

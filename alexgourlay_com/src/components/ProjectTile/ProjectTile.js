@@ -35,9 +35,12 @@ export default class ProjectTile extends React.Component {
     }
 
     handleTileClick() {
-        this.setState({
-            redirect: true
-        })
+        if (this.animation) {
+
+            this.setState({
+                redirect: true
+            })
+        }
     }
 
     render() {
@@ -49,7 +52,7 @@ export default class ProjectTile extends React.Component {
             return (
                 <Redirect to={{
                     pathname: `${this.props.match.url}Projects/${titleNoSpaces}`,
-                    
+
                     // Attempt to supply project state to component
                     // state: {
                     //     message: 'Hello Alex',
@@ -59,7 +62,7 @@ export default class ProjectTile extends React.Component {
             )
         } else {
             return (
-                <div className= {this.animation? "tile" : "tile_noAnimation"}
+                <div className={this.animation ? "tile" : "tile_noAnimation"}
                     onMouseEnter={() => (this.props.handleTileEnter(project))}
                     onMouseLeave={() => (this.props.handleTileExit())}
                     onClick={() => this.handleTileClick(project)}
@@ -68,7 +71,9 @@ export default class ProjectTile extends React.Component {
                     <div id="date">{project.date}</div>
                     {/* <Link to={`${this.props.match.url}Projects/${titleNoSpaces}`} >
                     </Link> */}
-                    <div id="title">{project.title}</div>
+                    <div id={this.animation ? "title" : "title_noAnimation"}>
+                        {project.title}
+                    </div>
 
                     {project.tags.map((tag, index) => (
                         <p className="tag" key={index}>
