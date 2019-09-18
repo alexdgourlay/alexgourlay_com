@@ -4,6 +4,7 @@
         "date" : "13-02-2018",
         "title" : "AXPendula",
         "tags" : ["Audio Visual", "Max MSP", "Installation"],
+        "dir" : "0_AXPendula",
         "img" : "0_AXPendula/OPT_A_AXPendula.JPG"
     },
     {
@@ -11,6 +12,7 @@
         "date" : "21-04-2019",
         "title" : "OrBit",
         "tags" : ["Product Design", "Music Tech", "Ableton"],
+        "dir" : "1_OrBit",
         "img" : "1_OrBit/OPT_A_OrBit.jpg"
     },
     {

@@ -25,7 +25,7 @@ const ConnectFooter = (props) => {
             </div>
             <div>
                 <p className="footer-text">
-                    Designed and built by me, using React.js ✌
+                    Designed and built by me, using React.js <span>✌</span>
                 </p>
             </div>
         </div>

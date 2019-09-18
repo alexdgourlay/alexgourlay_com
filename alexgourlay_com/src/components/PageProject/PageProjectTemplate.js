@@ -5,7 +5,8 @@ import ProjectTile from '../ProjectTile/ProjectTile.js';
 
 import './PageProject.css'
 
-import projects from '../../data/projects.json'
+import projects from '../../data/projects.json';
+import links from '../../data/links.json';
 
 const AXPendula = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
 const OrBit = lazy(() => import('./PageProjects/PageProject_1_OrBit'));
@@ -47,7 +48,8 @@ const PageProjectTemplate = (props) => {
                     handleTileExit={() => { }}
                 />
                 <ProjectComp
-                    project={project} />
+                    project={project} 
+                    RES_DIR={`${links['github_dir']}/${project.dir}`}/>
             </div>
         </Suspense>
     );

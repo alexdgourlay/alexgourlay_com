@@ -14,13 +14,18 @@ const PageProject_1_OrBit = (props) => {
                 title='Orbit Kickstarter Video'
                 src="https://player.vimeo.com/video/337293634"
                 width="640" height="360"
-                frameBorder="0"
+                frameBorder=""
                 allow="autoplay; fullscreen"
                 allowFullScreen></iframe>
 
             <p className='p'>
-                This projet spanned aross an academic year and was 
+                This project spanned across an academic year and was 
             </p>
+
+            <img
+                id='project-img'
+                alt='bitlabs.uk screenshot'
+                src={`${props.RES_DIR}/OPT_bitlabs_uk.PNG`}/>
         </div>
     );
 }

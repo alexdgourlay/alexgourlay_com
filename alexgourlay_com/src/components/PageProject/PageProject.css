@@ -5,6 +5,7 @@
     min-width: 640;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
     /* border: dashed black 1px; */
 }
 
@@ -12,7 +13,6 @@
     object-fit: cover;
     width: 100%;
     height: 200px;
-
 }
 
 .p {
