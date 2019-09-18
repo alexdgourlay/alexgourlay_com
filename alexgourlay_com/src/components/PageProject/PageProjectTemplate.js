@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react';
+import SyncLoader from 'react-spinners/SyncLoader';
 
 import ProjectTile from '../ProjectTile/ProjectTile.js';
 
@@ -24,21 +25,43 @@ const PageProjectTemplate = (props) => {
     const project = projects[pages[projectTitle][0]];
 
     return (
-        <Suspense fallback={<div>Loading..</div>}>
-            <div>  
+        <Suspense
+            fallback=
+            {
+                <div>
+                    <SyncLoader
+                        css={{ position: 'fixed', top: '50%', left: '50%', marginRight: '100px', marginBottom: '50px' }}
+                        sizeUnit={'px'}
+                        size={10}
+                        color={'#676767'}
+                        loading={true} />
+                </div>
+            }>
+            <div id="project-main-body">
                 <ProjectTile
                     key={project.id}
                     project={project}
                     match={props.match}
-                    animation = {false}
-                    handleTileEnter={() => {}}
-                    handleTileExit={() => {}}
-                    />
-                <ProjectComp 
-                    project = {project}/>
+                    animation={false}
+                    handleTileEnter={() => { }}
+                    handleTileExit={() => { }}
+                />
+                <ProjectComp
+                    project={project} />
             </div>
         </Suspense>
     );
 }
+
+// const LoadingScreen = (props) => {
+
+//     return (
+//         <div
+//             style="position:fixed;top:50%;left:50%">
+//             <Spinner
+//                 animation="grow" />
+//         </div>
+//     );
+// }
 
 export default PageProjectTemplate;

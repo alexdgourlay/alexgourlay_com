@@ -25,7 +25,7 @@ class PageHome extends React.Component {
     this.handleTileExit = this.handleTileExit.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
 
     document.title = `AG Portfolio - Home`;
 

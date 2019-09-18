@@ -7,10 +7,9 @@ import '../PageProject.css'
 
 const PageProject_0_AXPendula = (props) => {
     const RES_DIR = 'resources/projects';
-    
+
     return (
         <div>
-            <div id="project-main-body">
                 <div>
                     <img
                         id = 'hero_img'
@@ -23,7 +22,6 @@ const PageProject_0_AXPendula = (props) => {
 
                 </Carousel>
                 <p> Hello this is a project in my portfolio</p>
-            </div>
         </div>
     )
 }

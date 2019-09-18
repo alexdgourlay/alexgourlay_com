@@ -1,8 +1,10 @@
 #project-main-body {
     align-content: center;
     text-align: center;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1280px;
+    min-width: 640;
+    margin-left: auto;
+    margin-right: auto;
     /* border: dashed black 1px; */
 }
 
@@ -11,4 +13,17 @@
     width: 100%;
     height: 200px;
 
+}
+
+.p {
+    font-family: 'IBM Plex Sans', sans-serif; font-weight: 400;
+    font-size: 12pt;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed black 1 px;
+}
+
+iframe {
+    padding: 5px;
 }

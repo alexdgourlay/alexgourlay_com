@@ -13,22 +13,23 @@ const ConnectFooter = (props) => {
 
     return (
         <div id="container">
-            {/* <hr/> */}
             <div>
-            <GoMarkGithub
-                className="icon"
-                size= {iconSize}
-                onClick={() => window.open(links.github)} />
-            <TiSocialLinkedin
-                className='icon'
-                size = {iconSize} 
-                onClick={() => window.open(links.linkedin)}/>
+                <GoMarkGithub
+                    className="icon"
+                    size={iconSize}
+                    onClick={() => window.open(links.github)} />
+                <TiSocialLinkedin
+                    className='icon'
+                    size={iconSize}
+                    onClick={() => window.open(links.linkedin)} />
             </div>
             <div>
-                <p>Designed and built by me, using React.js</p>
+                <p className="footer-text">
+                    Designed and built by me, using React.js ✌
+                </p>
             </div>
         </div>
-        
+
     );
 }
 

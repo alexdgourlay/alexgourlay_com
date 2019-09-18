@@ -5,8 +5,9 @@ import './HeadBar.css';
 const HeadBar = (props) => (
     <div>
         <Link to={'/'}>
-            <div className='titleText'>Alex Gourlay</div>
+            <div className='titleText'>A</div>
         </Link>
+        <div style={{height:'40px'}}/>
     </div>
 
 )
