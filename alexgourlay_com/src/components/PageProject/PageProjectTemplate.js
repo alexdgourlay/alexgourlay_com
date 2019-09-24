@@ -10,6 +10,7 @@ import links from '../../data/links.json';
 
 const AXPendula = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
 const OrBit = lazy(() => import('./PageProjects/PageProject_1_OrBit'));
+const HorizonsStudio = lazy(() => import('./PageProjects/PageProject_2_HorizonsStudio'));
 
 const PageProjectTemplate = (props) => {
 
@@ -20,6 +21,7 @@ const PageProjectTemplate = (props) => {
     const pages = {
         AXPendula: [0, AXPendula],
         OrBit: [1, OrBit],
+        HorizonsStudio: [2, HorizonsStudio]
     }
 
     const ProjectComp = pages[projectTitle][1];

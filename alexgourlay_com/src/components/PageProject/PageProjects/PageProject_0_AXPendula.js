@@ -1,29 +1,41 @@
 import React from 'react';
-import { Button, Carousel } from 'react-bootstrap'
-
-import links from '../../../data/links.json';
+import { Button } from 'react-bootstrap';
+import Gallery from 'react-grid-gallery';
 
 import '../PageProject.css'
 
+
 const PageProject_0_AXPendula = (props) => {
-    const RES_DIR = 'resources/projects';
+
+    const IMAGES = [
+        {
+            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnailWidth: 640,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+    ]
 
     return (
-        <div>
-                <div>
-                    <img
-                        id = 'hero_img'
-                        alt='Project Preview'
-                        src={`${links['github_dir']}/${RES_DIR}/${props.project.img}`} />
-                </div>
-                <Button />
-
-                <Carousel>
-
-                </Carousel>
-                <p> Hello this is a project in my portfolio</p>
+        <div id='project-content'>
+            <Gallery
+                images={IMAGES}
+                enableImageSelection={false} />
         </div>
     )
 }
+
 
 export default PageProject_0_AXPendula;

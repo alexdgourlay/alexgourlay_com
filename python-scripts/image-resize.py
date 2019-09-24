@@ -13,12 +13,12 @@ quality = 90
 namePrefix = "OPT"
 
 # Function for printing number in readable byte format e.g. '1.2KiB'
-def sizeof_fmt(num, suffix='b'):
-    for unit in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
-        if abs(num) < 1024.0:
-            return "%3.1f%s%s" % (num, unit, suffix)
-        num /= 1024.0
-    return "%.1f%s%s" % (num, 'Yi', suffix)
+# def sizeof_fmt(num, suffix='b'):
+#     for unit in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
+#         if abs(num) < 1024.0:
+#             return "%3.1f%s%s" % (num, unit, suffix)
+#         num /= 1024.0
+#     return "%.1f%s%s" % (num, 'Yi', suffix)
 
 
 def optimise_image(path, height, quality, namePrefix):
@@ -41,8 +41,7 @@ def optimise_image(path, height, quality, namePrefix):
     out.save(OUT_PATH, quality=quality)
 
     # im = Image.open(OUT_PATH)
-    # print("Optimised: " + "{}, ".format(im.size) + sizeof_fmt(os.path.getsize(OUT_PATH)))
-
+   
 
 def run():
     for root, dirs, files in os.walk(RES_DIR):

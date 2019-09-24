@@ -14,6 +14,7 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    /* background: red; */
     /* border: dashed red 1px; */
 }
 
@@ -33,6 +34,21 @@
     border: dashed black 1 px;
 }
 
-iframe {
-    padding: 5px;
+.iframe-container {
+    overflow: hidden;
+    padding-top: calc(3 / 4);
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.iframe-container-4x3 {
+    padding-top: 75%;
 }

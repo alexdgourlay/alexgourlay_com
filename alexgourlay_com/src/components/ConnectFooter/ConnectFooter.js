@@ -9,23 +9,23 @@ import "./ConnectFooter.css"
 
 const ConnectFooter = (props) => {
 
-    let iconSize = 25;
+    let iconSize = 35;
 
     return (
         <div id="container">
             <div>
                 <GoMarkGithub
-                    className="icon"
+                    className="footer-icon"
                     size={iconSize}
                     onClick={() => window.open(links.github)} />
                 <TiSocialLinkedin
-                    className='icon'
+                    className='footer-icon'
                     size={iconSize}
                     onClick={() => window.open(links.linkedin)} />
             </div>
             <div>
                 <p className="footer-text">
-                    Designed and built by me, using React.js <span>✌</span>
+                    Designed and built by me, using React.js 
                 </p>
             </div>
         </div>
