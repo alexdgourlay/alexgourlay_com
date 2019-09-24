@@ -24,7 +24,8 @@ namePrefix = "OPT"
 def optimise_image(path, height, quality, namePrefix):
 
     im = Image.open(path)
-    # print("Original: " + "{}, ".format(im.size) + sizeof_fmt(os.path.getsize(IN_PATH)))
+    # print("Original: " + "{}, ".format(im.size)
+    #  + sizeof_fmt(os.path.getsize(IN_PATH)))
 
     # Convert to RGB format if not already in that format.
     if not path.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG')):

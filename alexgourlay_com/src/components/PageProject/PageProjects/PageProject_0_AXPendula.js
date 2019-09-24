@@ -7,7 +7,7 @@ import '../PageProject.css'
 
 const PageProject_0_AXPendula = (props) => {
 
-    const IMAGES = [
+    const IMAGES_A = [
         {
             src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
             thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
@@ -31,7 +31,7 @@ const PageProject_0_AXPendula = (props) => {
     return (
         <div id='project-content'>
             <Gallery
-                images={IMAGES}
+                images={IMAGES_A}
                 enableImageSelection={false} />
         </div>
     )
