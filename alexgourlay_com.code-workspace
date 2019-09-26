@@ -1,10 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "alexgourlay_com"
-		},
-		{
-			"path": "python-scripts"
+			"path": "."
 		}
 	],
 	"settings": {}
