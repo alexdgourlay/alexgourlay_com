@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Image, Jumbotron } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 const PageProject_1_OrBit = (props) => {
 
@@ -14,6 +14,7 @@ const PageProject_1_OrBit = (props) => {
             {/* Kickstarter video */}
             <div className='iframe-container'>
                 <iframe
+                    title="Vimeo Video"
                     src="https://player.vimeo.com/video/337293634"
                     width="480" height="360"
                     frameBorder=""
@@ -26,13 +27,20 @@ const PageProject_1_OrBit = (props) => {
                 This project spanned across an academic year and was
             </p>
 
-            <Button
+            {/* <Button
                 variant="outline-info "
                 siz="lg"
                 block
                 onClick={() => window.location.href = 'http://bitlabs.uk'}>
                 Go to promotional website
-                </Button>
+                </Button> */}
+
+            <p className='p' style={{ 'text-align': 'center' }}>
+                Promotional website available <a href="http://www.bitlabs.uk"
+                    target="_blank"
+                    rel='noopener noreferrer'>
+                    here.</a>
+            </p>
 
             <Image
                 src={`${props.RES_DIR}/OPT_bitlabs_uk.PNG`}
@@ -47,9 +55,3 @@ export default PageProject_1_OrBit;
 
 
 
-{/* <p className='p' style={{'text-align':'center'}}>
-    Promotional website available <a href="http://www.bitlabs.uk" 
-                                    target="_blank"
-                                    rel='noopener noreferrer'>
-                                    here.</a>
-</p> */}

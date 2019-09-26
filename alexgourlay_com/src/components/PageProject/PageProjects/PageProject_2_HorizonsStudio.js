@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button, Carousel } from 'react-bootstrap'
 
 import '../PageProject.css'
 
 const PageProject_2_HorizonsStudio = (props) => {
-    const RES_DIR = 'resources/projects';
+    // const RES_DIR = 'resources/projects';
 
     return (
         <div id='project-content'>
@@ -15,6 +14,7 @@ const PageProject_2_HorizonsStudio = (props) => {
                 interactions for the Oculus Rift platform.
             </p>
             <iframe
+                title="Vimeo Video"
                 src="https://player.vimeo.com/video/361057084"
                 width="640" height="360"
                 frameborder="0"

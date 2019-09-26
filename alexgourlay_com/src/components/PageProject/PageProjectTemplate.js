@@ -50,8 +50,8 @@ const PageProjectTemplate = (props) => {
                     handleTileExit={() => { }}
                 />
                 <ProjectComp
-                    project={project} 
-                    RES_DIR={`${links['github_dir']}/${project.dir}`}/>
+                    project={project}
+                    RES_DIR={`${links['github_dir']}/${project.dir}`} />
             </div>
         </Suspense>
     );
