@@ -1,5 +1,6 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
+import Carousel from 'react-images';
 import LazyLoad from 'react-lazyload';
 
 import '../PageProject.css'
@@ -10,13 +11,13 @@ const PageProject_0_AXPendula = (props) => {
     const IMAGES_A = [
         {
             src: `${props.RES_DIR}/0.JPG`,
-            thumbnail: `${props.RES_DIR}/0.JPG`,
+            thumbnail: `${props.RES_DIR}/0.jpg`,
             thumbnailWidth: 640,
             thumbnailHeight: 320,
         },
         {
             src: `${props.RES_DIR}/1.JPG`,
-            thumbnail: `${props.RES_DIR}/1.JPG`,
+            thumbnail: `${props.RES_DIR}/1.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
@@ -34,13 +35,13 @@ const PageProject_0_AXPendula = (props) => {
         },
         {
             src: `${props.RES_DIR}/5.jpg`,
-            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/5.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
         {
             src: `${props.RES_DIR}/6.jpg`,
-            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/6.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
@@ -52,13 +53,13 @@ const PageProject_0_AXPendula = (props) => {
         },
         {
             src: `${props.RES_DIR}/8.jpg`,
-            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/8.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
         {
             src: `${props.RES_DIR}/9.jpg`,
-            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/9.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
@@ -81,14 +82,15 @@ const PageProject_0_AXPendula = (props) => {
                 School's Audio Experience exhibition and secondly for London Design
                 Festival where the installation was opened to the public.
             </p>
-            <div className="separator" />
+
+            {/* <div className="separator" /> */}
 
             <iframe
                 title="Vimeo Video"
                 src="https://player.vimeo.com/video/363536559"
-                width="640" height="480" frameborder="0"
+                width="640" height="480" frameBorder="0"
                 allow="autoplay; fullscreen"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
 
             <div className="separator" />
 
@@ -100,12 +102,16 @@ const PageProject_0_AXPendula = (props) => {
             </LazyLoad>
 
             <div className="separator" />
-
-            <iframe
-                title="YouTube Video"
-                width="560" height="315"
-                src="https://www.youtube.com/embed/rDF878TOnoI?start=39"
-                frameBorder="0"></iframe>
+        
+            <LazyLoad>
+                <div>
+                    <iframe
+                        title="YouTube Video"
+                        width="560" height="315"
+                        src="https://www.youtube.com/embed/rDF878TOnoI?start=39"
+                        frameBorder="0"></iframe>
+                </div>
+            </LazyLoad>
 
             <div className="separator" />
 
@@ -120,6 +126,8 @@ const PageProject_0_AXPendula = (props) => {
             </LazyLoad>
 
             <div className="separator" />
+
+            {/* <Carousel views={IMAGES_A}/> */}
 
         </div>
     )
