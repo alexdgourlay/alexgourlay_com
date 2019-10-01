@@ -14,7 +14,23 @@ const PreviewPane = (props) => {
                     src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
         )
 
-    } else return null;
+    } else return (
+        <div style={{"background":"black"}}>
+            <p 
+            style={{"textAlign":"justified center", 
+                    "fontSize":"40px",
+                    "paddingTop":"30px", 
+                    "paddingRight":"40px",
+                    "fontWeight":"500",
+                    "fontColor":"white"}}>
+                Hello and welcome to my portfolio site, to find out 
+                more about me and my work, click <b style={{"color":"red"}}>here</b>, otherwise
+                hover and select a project from the left 👈.
+            </p>
+        </div>
+    );
 }
+
+
 
 export default PreviewPane;

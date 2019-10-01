@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import imghdr
 
-RES_DIR = "../alexgourlay_com/resources/"
+RES_DIR = "../alexgourlay_com/resources/projects"
 
 # Height of optimised images.
 height = 1000
@@ -42,7 +42,7 @@ def optimise_image(path, height, quality, namePrefix):
     out.save(OUT_PATH, quality=quality)
 
     # im = Image.open(OUT_PATH)
-   
+
 
 def run():
     for root, dirs, files in os.walk(RES_DIR):
