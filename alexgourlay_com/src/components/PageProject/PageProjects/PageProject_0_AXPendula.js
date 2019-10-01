@@ -9,20 +9,56 @@ const PageProject_0_AXPendula = (props) => {
 
     const IMAGES_A = [
         {
-            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
-            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            src: `${props.RES_DIR}/0.JPG`,
+            thumbnail: `${props.RES_DIR}/0.JPG`,
             thumbnailWidth: 640,
             thumbnailHeight: 320,
         },
         {
-            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
-            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            src: `${props.RES_DIR}/1.JPG`,
+            thumbnail: `${props.RES_DIR}/1.JPG`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
         {
-            src: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
-            thumbnail: `${props.RES_DIR}/OPT_A_AXPendula.JPG`,
+            src: `${props.RES_DIR}/3.jpg`,
+            thumbnail: `${props.RES_DIR}/3.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/5.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/6.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/7.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/8.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 320,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/9.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
             thumbnailWidth: 320,
             thumbnailHeight: 320,
         },
