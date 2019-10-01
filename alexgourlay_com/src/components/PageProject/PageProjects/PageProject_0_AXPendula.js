@@ -72,15 +72,32 @@ const PageProject_0_AXPendula = (props) => {
                 the physical laws of simple harmonic motion. Eight custom designed
                 pendula are set in motion, each illuminating and triggering a musical
                 note as they pass through the centre.
-                <br/>
+                <br />
                 The installation was built using Arduino as an input-output controller,
-                Max MSP for processing and sound generation and MIRA to provide a user 
+                Max MSP for processing and sound generation and MIRA to provide a user
                 interface on an iPad wirelessly.
-                <br/>
+                <br />
                 AXPendula was exhibited twice throughout 2018, firstly at the Dyson
                 School's Audio Experience exhibition and secondly for London Design
-                Festival where the installation was opened to the public. 
+                Festival where the installation was opened to the public.
             </p>
+            <div className="separator" />
+
+            <iframe
+                title="Vimeo Video"
+                src="https://player.vimeo.com/video/363536559"
+                width="640" height="480" frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen></iframe>
+
+            <div className="separator" />
+
+            <LazyLoad height={200}>
+                <Gallery
+                    images={IMAGES_A}
+                    enableImageSelection={false} />
+
+            </LazyLoad>
 
             <div className="separator" />
 
@@ -104,12 +121,6 @@ const PageProject_0_AXPendula = (props) => {
 
             <div className="separator" />
 
-            <LazyLoad height={200}>
-                <Gallery
-                    images={IMAGES_A}
-                    enableImageSelection={false} />
-
-            </LazyLoad>
         </div>
     )
 }
