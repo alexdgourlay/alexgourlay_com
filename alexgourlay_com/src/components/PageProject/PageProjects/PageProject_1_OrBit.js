@@ -1,6 +1,9 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
+import Gallery from 'react-grid-gallery';
+import LazyLoad from 'react-lazyload';
+
 const PageProject_1_OrBit = (props) => {
 
     return (
@@ -11,8 +14,10 @@ const PageProject_1_OrBit = (props) => {
                 you to your favourite digital effects and sounds.
             </p>
 
+            {/* <div className="separator" /> */}
+
             {/* Kickstarter video */}
-            <div className='iframe-container'>
+            <div >
                 <iframe
                     title="Vimeo Video"
                     src="https://player.vimeo.com/video/337293634"
@@ -22,18 +27,14 @@ const PageProject_1_OrBit = (props) => {
                     allowFullScreen></iframe>
             </div>
 
-
             <p className='p'>
-                This project spanned across an academic year and was
+                OrBit offers a means of controlling music software that focuses on expression and versatility. Using motion to control musical effects and sounds provides two extra dimensions
+    of expression when compared to a single knob or slider found on conventional MIDI controllers. As a
+    result, a much wider range of sonic results can be achieved. Another advantage over conventional
+    input methods is that motion control does not require use of the fingers, which would be occupied
+    when playing an instrument. OrBit therefore allows instrumentalists to actively control musical
+    effects and sounds whilst performing.
             </p>
-
-            {/* <Button
-                variant="outline-info "
-                siz="lg"
-                block
-                onClick={() => window.location.href = 'http://bitlabs.uk'}>
-                Go to promotional website
-                </Button> */}
 
             <p className='p' style={{ 'text-align': 'center' }}>
                 Promotional website available <a href="http://www.bitlabs.uk"
@@ -43,10 +44,8 @@ const PageProject_1_OrBit = (props) => {
             </p>
 
             <Image
-                src={`${props.RES_DIR}/OPT_bitlabs_uk.PNG`}
-                alt='bitlabs.uk screenshot'
-                rounded
-                fluid />
+                src={`${props.RES_DIR}/Mapping.gif`}/>
+
         </div>
     );
 }

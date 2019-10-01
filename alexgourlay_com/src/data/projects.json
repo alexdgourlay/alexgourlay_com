@@ -32,8 +32,8 @@
     {
         "id" : "4",
         "date" : "21-02-2019",
-        "title" : "Test Project",
-        "tags" : ["Testing", "Smart Healthcare"],
+        "title" : "Personal Website",
+        "tags" : ["React JS", "UI"],
         "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
     }
 ]

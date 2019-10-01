@@ -1,6 +1,5 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
-import Carousel from 'react-images';
 import LazyLoad from 'react-lazyload';
 
 import '../PageProject.css'
@@ -101,7 +100,7 @@ const PageProject_0_AXPendula = (props) => {
 
             </LazyLoad>
 
-            <div className="separator" />
+            {/* <div className="separator" />
         
             <LazyLoad>
                 <div>
@@ -111,7 +110,7 @@ const PageProject_0_AXPendula = (props) => {
                         src="https://www.youtube.com/embed/rDF878TOnoI?start=39"
                         frameBorder="0"></iframe>
                 </div>
-            </LazyLoad>
+            </LazyLoad> */}
 
             <div className="separator" />
 
