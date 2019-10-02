@@ -19,7 +19,7 @@ br {
 
 #project-content {
     align-content: center;
-    max-width: 600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -40,24 +40,25 @@ br {
 }
 
 .p {
+    max-width: 600px;
     font-family: 'IBM Plex Sans', sans-serif; font-weight: 400;
     font-size: 12pt;
     line-height: 1.5;
     border: dashed black 1 px;
 }
 
-.iframe-container {
+.resp-container {
     overflow: hidden;
-    padding-top: calc(3 / 4);
+    padding-top: 56.25%; /*calc(3 / 4);*/
     position: relative;
 }
 
-.iframe-container iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
+.resp-iframe {
     position: absolute;
+    border: 0;
     top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
 }
 

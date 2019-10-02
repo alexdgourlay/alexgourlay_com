@@ -15,7 +15,7 @@ const PreviewPane = (props) => {
         )
 
     } else return (
-        <div style={{"background":"black"}}>
+        <div style={{}}>
             <p 
             style={{"textAlign":"justified center", 
                     "fontSize":"40px",

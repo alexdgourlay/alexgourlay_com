@@ -44,24 +44,24 @@ const PageProject_0_AXPendula = (props) => {
             thumbnailWidth: 427,
             thumbnailHeight: 320,
         },
-        {
-            src: `${props.RES_DIR}/0.jpg`,
-            thumbnail: `${props.RES_DIR}/0.jpg`,
-            thumbnailWidth: 478,
-            thumbnailHeight: 320,
-        },
-        {
-            src: `${props.RES_DIR}/4.jpg`,
-            thumbnail: `${props.RES_DIR}/4.jpg`,
-            thumbnailWidth: 240,
-            thumbnailHeight: 320,
-        },
-        {
-            src: `${props.RES_DIR}/3.jpg`,
-            thumbnail: `${props.RES_DIR}/3.jpg`,
-            thumbnailWidth: 667,
-            thumbnailHeight: 320,
-        },
+        // {
+        //     src: `${props.RES_DIR}/0.jpg`,
+        //     thumbnail: `${props.RES_DIR}/0.jpg`,
+        //     thumbnailWidth: 478,
+        //     thumbnailHeight: 320,
+        // },
+        // {
+        //     src: `${props.RES_DIR}/4.jpg`,
+        //     thumbnail: `${props.RES_DIR}/4.jpg`,
+        //     thumbnailWidth: 240,
+        //     thumbnailHeight: 320,
+        // },
+        // {
+        //     src: `${props.RES_DIR}/3.jpg`,
+        //     thumbnail: `${props.RES_DIR}/3.jpg`,
+        //     thumbnailWidth: 667,
+        //     thumbnailHeight: 320,
+        // },
     ]
 
     return (
@@ -72,63 +72,72 @@ const PageProject_0_AXPendula = (props) => {
                 the physical laws of simple harmonic motion. Eight custom designed
                 pendula are set in motion, each illuminating and triggering a musical
                 note as they pass through the centre.
+
                 <br />
-                The installation was built using Arduino as an input-output controller,
-                Max MSP for processing and sound generation and MIRA to provide a user
-                interface on an iPad wirelessly.
                 <br />
+
                 AXPendula was exhibited twice throughout 2018, firstly at the Dyson
                 School's Audio Experience exhibition and secondly for London Design
                 Festival where the installation was opened to the public.
             </p>
 
-            {/* <div className="separator" /> */}
+            <div className="separator" />
 
-            <iframe
-                title="Vimeo Video"
-                src="https://player.vimeo.com/video/363536559"
-                width="640" height="480" frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen></iframe>
+            <div className="resp-container">
+                <iframe
+                    className="resp-iframe"
+                    title="Vimeo Video"
+                    src="https://player.vimeo.com/video/363536559"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen></iframe>
+            </div>
+
+            <div className="separator" />
+
+            <p className='p'>
+                The installation was built using Arduino as an input-output controller,
+                Max MSP for processing and sound generation and MIRA to provide a user
+                interface on an iPad wirelessly.
+            </p>
 
             <div className="separator" />
 
             <LazyLoad height={200}>
                 <Gallery
                     images={IMAGES_A}
-                    enableImageSelection={false} />
-
+                    enableImageSelection={false}
+                    margin={4}
+                    rowHeight={200} />
             </LazyLoad>
 
-            {/* <div className="separator" />
-        
-            <LazyLoad>
-                <div>
-                    <iframe
-                        title="YouTube Video"
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/rDF878TOnoI?start=39"
-                        frameBorder="0"></iframe>
-                </div>
-            </LazyLoad> */}
 
-            <div className="separator" />
 
             <LazyLoad height={200}>
-                <iframe
-                    title="Facebook Post"
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fimperialcollegelondon%2Fphotos%2Fgm.341656999910770%2F10156606112121838%2F%3Ftype%3D3%26theater&width=500&show_text=true&height=500&appId"
-                    width="500" height="500"
-                    style={{ "border": "none", "overflow": "hidden" }}
-                    scrolling="no"
-                    frameBorder="0" ></iframe>
+
+                <div className="separator" />
+                <p className='p'>
+                    The project was carried out in a team of seven students, in which I had a
+                    leading role. I took on the development of the software, which was implemented
+                    inside Max MSP. Along with overseeing the build process and parts sourcing.
+            </p>
             </LazyLoad>
 
-            <div className="separator" />
+            <LazyLoad height={200}>
+                <div>
 
-            {/* <Carousel views={IMAGES_A}/> */}
+                    <iframe
+                        title="Facebook Post"
+                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fimperialcollegelondon%2Fphotos%2Fgm.341656999910770%2F10156606112121838%2F%3Ftype%3D3%26theater&width=500&show_text=true&height=500&appId"
+                        width="400" height="500"
+                        style={{ "padding": "30px", "overflow": "hidden" }}
+                        align="left"
+                        scrolling="no"
+                        frameBorder="0" ></iframe>
 
-        </div>
+                </div>
+            </LazyLoad>
+        </div >
     )
 }
 

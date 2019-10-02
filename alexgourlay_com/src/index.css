@@ -10,6 +10,8 @@
 body {
   margin: 0;
   /* font-family: 'IBM Plex Mono', monospace; */
+  color: #0C020F;
+  background: white;
   font-family: 'IBM Plex Sans', sans-serif; font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
