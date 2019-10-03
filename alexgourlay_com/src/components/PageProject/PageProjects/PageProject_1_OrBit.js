@@ -11,6 +11,12 @@ const PageProject_1_OrBit = (props) => {
         {
             src: `${props.RES_DIR}/OPT_A_OrBit.jpg`,
             thumbnail: `${props.RES_DIR}/OPT_A_OrBit.jpg`,
+            thumbnailWidth: 570,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/4.JPG`,
+            thumbnail: `${props.RES_DIR}/4.JPG`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         },
@@ -21,21 +27,15 @@ const PageProject_1_OrBit = (props) => {
             thumbnailHeight: 320,
         },
         {
-            src: `${props.RES_DIR}/4.JPG`,
-            thumbnail: `${props.RES_DIR}/4.JPG`,
-            thumbnailWidth: 480,
-            thumbnailHeight: 320,
-        },
-        {
             src: `${props.RES_DIR}/0.png`,
             thumbnail: `${props.RES_DIR}/0.png`,
-            thumbnailWidth: 480,
+            thumbnailWidth: 528,
             thumbnailHeight: 320,
         },
         {
             src: `${props.RES_DIR}/Effect_Selection.gif`,
             thumbnail: `${props.RES_DIR}/Effect_Selection.gif`,
-            thumbnailWidth: 480,
+            thumbnailWidth: 567,
             thumbnailHeight: 320,
         },
         {
@@ -99,13 +99,8 @@ const PageProject_1_OrBit = (props) => {
 
             <div style={{ "paddingTop": "30px" }} />
 
-            <p className='p'>
-                This project was carried out in a team of four, with my role being CTO for BitLabs.
-
-            </p>
-
             <LazyLoad height={200}>
-                <div>
+                <div style={{"border":"dashed 2px blue", "width":"100%"}}>
                     <Gallery
                         images={IMAGES_A}
                         enableImageSelection={false}
@@ -113,6 +108,10 @@ const PageProject_1_OrBit = (props) => {
                         rowHeight={200} />
                 </div>
             </LazyLoad>
+
+            <p className='p'>
+                This project was carried out in a team of four, my role was of CTO
+            </p>
 
             <div className="separator" />
 

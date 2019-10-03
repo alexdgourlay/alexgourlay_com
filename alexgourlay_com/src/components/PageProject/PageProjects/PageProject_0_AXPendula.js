@@ -69,6 +69,10 @@ const PageProject_0_AXPendula = (props) => {
     return (
         <div id='project-content'>
 
+            <p className='p' >
+                <b>My Role:</b><br /> Project Management, Software Development (Max MSP), Sound Design
+            </p>
+
             <p className="p">
                 AXPendula is an interactive audio visual installation based on
                 the physical laws of simple harmonic motion. Eight custom designed
@@ -85,9 +89,9 @@ const PageProject_0_AXPendula = (props) => {
 
             <div className="separator" />
 
-            <MyIFrame 
-                _title= "Vimeo Video"
-                _src="https://player.vimeo.com/video/363536559"/>
+            <MyIFrame
+                _title="Vimeo Video"
+                _src="https://player.vimeo.com/video/363536559" />
 
             <div className="separator" />
 
@@ -100,12 +104,13 @@ const PageProject_0_AXPendula = (props) => {
             <div className="separator" />
 
             <LazyLoad height={200}>
-                <div>
+                <div className="resp-container">
                     <Gallery
                         images={IMAGES_A}
                         enableImageSelection={false}
                         margin={4}
-                        rowHeight={200} />
+                        rowHeight={200}
+                        backdropClosesModal={true}/>
                 </div>
             </LazyLoad>
 

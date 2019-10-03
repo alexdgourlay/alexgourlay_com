@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import imghdr
 
-RES_DIR = "../alexgourlay_com/resources/projects/1_Orbit/Originals/new"
+RES_DIR = "../alexgourlay_com/resources/projects/2_Horizons/Originals"
 
 # Height of optimised images.
 height = 1000
