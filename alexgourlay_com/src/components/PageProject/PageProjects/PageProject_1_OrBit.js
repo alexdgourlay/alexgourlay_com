@@ -10,13 +10,44 @@ const PageProject_1_OrBit = (props) => {
     const IMAGES_A = [
         {
             src: `${props.RES_DIR}/OPT_A_OrBit.jpg`,
-            thumbnail: `${props.RES_DIR}/OPT_A_Orbit.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_A_OrBit.jpg`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         },
         {
-            src: `${props.RES_DIR}/1.png`,
-            thumbnail: `${props.RES_DIR}/1.png`,
+            src: `${props.RES_DIR}/OPT_Chiara.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Chiara.png`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/4.JPG`,
+            thumbnail: `${props.RES_DIR}/4.JPG`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/0.png`,
+            thumbnail: `${props.RES_DIR}/0.png`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/Effect_Selection.gif`,
+            thumbnail: `${props.RES_DIR}/Effect_Selection.gif`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/Sketches2.png`,
+            thumbnail: `${props.RES_DIR}/Sketches2.png`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+            caption: "Sketches by Ian Kegler"
+        },
+        {
+            src: `${props.RES_DIR}/3.jpg`,
+            thumbnail: `${props.RES_DIR}/3.jpg`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         },
@@ -40,7 +71,7 @@ const PageProject_1_OrBit = (props) => {
             {/* Kickstarter video */}
             <MyIFrame
                 _title="Vimeo Video"
-                _src="https://player.vimeo.com/video/337293634"/>
+                _src="https://player.vimeo.com/video/337293634" />
 
             <div style={{ "paddingTop": "30px" }} />
 
