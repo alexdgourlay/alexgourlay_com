@@ -2,8 +2,9 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import LazyLoad from 'react-lazyload';
 
-import '../PageProject.css'
+import MyIFrame from '../../MyIFrame/MyIFrame';
 
+import '../PageProject.css'
 
 const PageProject_0_AXPendula = (props) => {
 
@@ -43,6 +44,7 @@ const PageProject_0_AXPendula = (props) => {
             thumbnail: `${props.RES_DIR}/9.jpg`,
             thumbnailWidth: 427,
             thumbnailHeight: 320,
+            caption: "Design by Fan Mo"
         },
         // {
         //     src: `${props.RES_DIR}/0.jpg`,
@@ -83,15 +85,9 @@ const PageProject_0_AXPendula = (props) => {
 
             <div className="separator" />
 
-            <div className="resp-container">
-                <iframe
-                    className="resp-iframe"
-                    title="Vimeo Video"
-                    src="https://player.vimeo.com/video/363536559"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen></iframe>
-            </div>
+            <MyIFrame 
+                _title= "Vimeo Video"
+                _src="https://player.vimeo.com/video/363536559"/>
 
             <div className="separator" />
 
@@ -104,18 +100,19 @@ const PageProject_0_AXPendula = (props) => {
             <div className="separator" />
 
             <LazyLoad height={200}>
-                <Gallery
-                    images={IMAGES_A}
-                    enableImageSelection={false}
-                    margin={4}
-                    rowHeight={200} />
+                <div>
+                    <Gallery
+                        images={IMAGES_A}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={200} />
+                </div>
             </LazyLoad>
 
+            <div className="separator" />
 
 
             <LazyLoad height={200}>
-
-                <div className="separator" />
                 <p className='p'>
                     The project was carried out in a team of seven students, in which I had a
                     leading role. I took on the development of the software, which was implemented
@@ -124,14 +121,14 @@ const PageProject_0_AXPendula = (props) => {
             </LazyLoad>
 
             <LazyLoad height={200}>
-                <div>
+                <div style={{ "alignContent": "right" }}>
 
                     <iframe
                         title="Facebook Post"
                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fimperialcollegelondon%2Fphotos%2Fgm.341656999910770%2F10156606112121838%2F%3Ftype%3D3%26theater&width=500&show_text=true&height=500&appId"
                         width="400" height="500"
                         style={{ "padding": "30px", "overflow": "hidden" }}
-                        align="left"
+                        align="right"
                         scrolling="no"
                         frameBorder="0" ></iframe>
 

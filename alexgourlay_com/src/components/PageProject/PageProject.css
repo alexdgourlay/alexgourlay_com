@@ -7,7 +7,6 @@ br {
 }
 
 #project-main-body {
-    align-content: center;
     text-align: center;
     max-width: 1280px;
     min-width: 640;
@@ -18,7 +17,7 @@ br {
 }
 
 #project-content {
-    align-content: center;
+    align-content: left;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -41,27 +40,65 @@ br {
 
 .p {
     max-width: 600px;
-    font-family: 'IBM Plex Sans', sans-serif; font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
     font-size: 12pt;
     line-height: 1.5;
     border: dashed black 1 px;
-}
-
-.resp-container {
-    overflow: hidden;
-    padding-top: 56.25%; /*calc(3 / 4);*/
-    position: relative;
-}
-
-.resp-iframe {
-    position: absolute;
-    border: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    animation: fadeIn 1.0s ease;
+    -webkit-animation: fadeIn 1.0s ease;
+    -moz-animation: fadeIn 1.0s ease;
+    -o-animation: fadeIn 1.0s ease;
+    -ms-animation: fadeIn 1.0s ease;
 }
 
 .iframe-container-4x3 {
     padding-top: 75%;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
