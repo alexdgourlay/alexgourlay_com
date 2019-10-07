@@ -58,21 +58,33 @@ const PageProject_0_AXPendula = (props) => {
         //     thumbnailWidth: 240,
         //     thumbnailHeight: 320,
         // },
-        // {
-        //     src: `${props.RES_DIR}/3.jpg`,
-        //     thumbnail: `${props.RES_DIR}/3.jpg`,
-        //     thumbnailWidth: 667,
-        //     thumbnailHeight: 320,
-        // },
     ]
 
     const IMAGES_B = [
         {
             src: `${props.RES_DIR}/10.jpg`,
             thumbnail: `${props.RES_DIR}/10.jpg`,
-            thumbnailWidth: 480,
+            thumbnailWidth: 526,
             thumbnailHeight: 320,
-        }
+        },
+        {
+            src: `${props.RES_DIR}/11.jpg`,
+            thumbnail: `${props.RES_DIR}/11.jpg`,
+            thumbnailWidth: 382,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/12.jpg`,
+            thumbnail: `${props.RES_DIR}/12.jpg`,
+            thumbnailWidth: 440,
+            thumbnailHeight: 320,
+        },
+          {
+            src: `${props.RES_DIR}/3.jpg`,
+            thumbnail: `${props.RES_DIR}/3.jpg`,
+            thumbnailWidth: 667,
+            thumbnailHeight: 320,
+        },
     ]
 
     return (
@@ -102,13 +114,12 @@ const PageProject_0_AXPendula = (props) => {
                 AXPendula was exhibited twice throughout 2018, firstly at the Dyson
                     School's Audio Experience exhibition and secondly for London Design
                     Festival where the installation was opened to the public.
-
                     <br /><br />
 
-            The installation was built using Arduino as an input-output controller,
-            Max MSP for processing/sound generation and MIRA to provide a user
-            interface on an iPad wirelessly. The interface allowed viewers to 
-            change the harmonic scale that would be played as the pendulums triggered.
+                The installation was built using an Arduino as an input-output controller,
+                Max MSP for processing/sound generation and MIRA to provide a user
+                interface on an iPad wirelessly. The interface allowed viewers to
+                change the harmonic scale that would be played as the pendulums triggered.
             </p>
 
             <LazyLoad height={200}>
@@ -125,9 +136,9 @@ const PageProject_0_AXPendula = (props) => {
 
             <p className="p">
 
-                The project was carried out in a team of students, in which I had a
+                The project was carried out by a team of students, in which I had a
                 leading role. I covered the development of the installation's software
-                and also undertook the task of sound design, which was fulfilled using 
+                and also undertook the task of sound design, which was fulfilled using
                 subtractive synthesis within Max MSP.
             </p>
 
@@ -142,6 +153,14 @@ const PageProject_0_AXPendula = (props) => {
 
                 </div>
             </LazyLoad>
+
+            <p className="p">
+
+            The budget for the project was £100 and construction of the installation took around 1 week. Each pendulum consisted of
+            a 2W white LED cluster, a plastic Christmas tree bauble, a 3D printed ceramic part and a small magnet. Each was suspended
+            using polyamide thread. Hall effect sensors were used to sense the pendulums passing through the centre.
+
+            </p>
 
 
         </div >
