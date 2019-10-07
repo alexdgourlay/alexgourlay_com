@@ -1,6 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import { Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 import Gallery from 'react-grid-gallery';
 
 import MyIFrame from '../../MyIFrame/MyIFrame';
@@ -39,6 +39,12 @@ const PageProject_1_OrBit = (props) => {
             thumbnailHeight: 320,
         },
         {
+            src: `${props.RES_DIR}/Screen_Control.gif`,
+            thumbnail: `${props.RES_DIR}/Screen_Control.gif`,
+            thumbnailWidth: 567,
+            thumbnailHeight: 320,
+        },
+        {
             src: `${props.RES_DIR}/Sketches2.png`,
             thumbnail: `${props.RES_DIR}/Sketches2.png`,
             thumbnailWidth: 480,
@@ -63,7 +69,8 @@ const PageProject_1_OrBit = (props) => {
             <p className='p'>
                 Orbit is a motion-sensing device for musicians and performers.
                 It bridges the gap between acoustic and digital music by connecting
-                you to your favourite digital effects and sounds.
+                you to your favourite digital effects and sounds. The device connects wirelessly
+                to your DAW through the OrBit software plugin. 
             </p>
 
             <div style={{ "paddingTop": "30px" }} />
@@ -76,12 +83,13 @@ const PageProject_1_OrBit = (props) => {
             <div style={{ "paddingTop": "30px" }} />
 
             <p className='p'>
-                OrBit offers a means of controlling music software that focuses on expression and versatility. Using motion to control musical effects
-                and sounds provides two extra dimensions of expression when compared to a single knob or slider found on conventional MIDI controllers.
-                As a result, a much wider range of sonic results can be achieved. Another advantage over conventional
-                input methods is that motion control does not require use of the fingers, which would be occupied
-                when playing an instrument. OrBit therefore allows instrumentalists to actively control musical
-                effects and sounds whilst performing.
+                This project was carried out in a team of four, my role was of CTO
+
+                <br/><br/>
+
+                The project was conducted as part of an enterprise module at Imperial
+                College London. One deliverable for the module,  half way through the
+                product's development, was a promotional website and video. 
             </p>
 
             <p className='p' style={{ 'fontWeight': '600', "textAlign": "right" }}>
@@ -97,10 +105,8 @@ const PageProject_1_OrBit = (props) => {
                     here.</a>
             </p>
 
-            <div style={{ "paddingTop": "30px" }} />
-
             <LazyLoad height={200}>
-                <div style={{"border":"dashed 2px blue", "width":"100%"}}>
+                <div className="gallery-div">
                     <Gallery
                         images={IMAGES_A}
                         enableImageSelection={false}
@@ -109,15 +115,7 @@ const PageProject_1_OrBit = (props) => {
                 </div>
             </LazyLoad>
 
-            <p className='p'>
-                This project was carried out in a team of four, my role was of CTO
-            </p>
-
             <div className="separator" />
-
-            <Image
-                src={`${props.RES_DIR}/Screen_Control.gif`}
-                fluid />
 
         </div>
     );

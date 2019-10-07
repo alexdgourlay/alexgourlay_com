@@ -3,6 +3,7 @@
     padding-top: 56.25%;
     /*calc(3 / 4);*/
     position: relative;
+    align-content: left;
 }
 
 .resp-iframe {

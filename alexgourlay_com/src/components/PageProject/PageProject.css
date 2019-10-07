@@ -1,5 +1,14 @@
 div.separator {
     padding-top: 50px;
+    /* border-top: 50px; */
+}
+
+div.gallery-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    overflow: auto;
+    /* border: dashed 2px blue; */
 }
 
 br {
