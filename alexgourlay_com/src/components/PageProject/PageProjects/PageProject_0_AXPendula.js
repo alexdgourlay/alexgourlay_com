@@ -68,8 +68,8 @@ const PageProject_0_AXPendula = (props) => {
 
     const IMAGES_B = [
         {
-            src: `${props.RES_DIR}/8.jpg`,
-            thumbnail: `${props.RES_DIR}/8.jpg`,
+            src: `${props.RES_DIR}/10.jpg`,
+            thumbnail: `${props.RES_DIR}/10.jpg`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         }
