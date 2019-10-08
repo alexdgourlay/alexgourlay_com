@@ -55,20 +55,20 @@ const PageProject_1_OrBit = (props) => {
 
     const IMAGES_B = [
         {
-            src: `${props.RES_DIR}/3.jpg`,
-            thumbnail: `${props.RES_DIR}/3.jpg`,
-            thumbnailWidth: 480,
-            thumbnailHeight: 320,
-        },
-        {
             src: `${props.RES_DIR}/app1.JPG`,
             thumbnail: `${props.RES_DIR}/app1.JPG`,
-            thumbnailWidth: 480,
-            thumbnailHeight: 320,
+            thumbnailWidth: 750,
+            thumbnailHeight: 1334,
         },
         {
             src: `${props.RES_DIR}/app2.JPG`,
             thumbnail: `${props.RES_DIR}/app2.JPG`,
+            thumbnailWidth: 750,
+            thumbnailHeight: 1334,
+        },
+        {
+            src: `${props.RES_DIR}/3.jpg`,
+            thumbnail: `${props.RES_DIR}/3.jpg`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         },
@@ -134,17 +134,17 @@ const PageProject_1_OrBit = (props) => {
             </LazyLoad>
 
             <p className='p'>
-                Developed alongside the physical prototype was a mobile app that 
+                Developed alongside the physical prototype was a mobile app that
                 would imitate the functionality of the hardware. The app was developed
                 using React Native and was given a skeumorphic design to help
                 give a convincing experience of the real product.
 
-                <br/><br/>
+                <br /><br />
 
-                Communication between the mobile app and the host DAW was 
+                Communication between the mobile app and the host DAW was
                 facilitated by a websocket connection. The connection was served using
                 Node.js, which was hosted in a Max for Live device.
-                 
+
             </p>
 
             <LazyLoad height={200}>
