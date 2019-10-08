@@ -51,13 +51,28 @@ const PageProject_1_OrBit = (props) => {
             thumbnailHeight: 320,
             caption: "Sketches by Ian Kegler"
         },
+    ];
+
+    const IMAGES_B = [
         {
             src: `${props.RES_DIR}/3.jpg`,
             thumbnail: `${props.RES_DIR}/3.jpg`,
             thumbnailWidth: 480,
             thumbnailHeight: 320,
         },
-    ];
+        {
+            src: `${props.RES_DIR}/app1.JPG`,
+            thumbnail: `${props.RES_DIR}/app1.JPG`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/app2.JPG`,
+            thumbnail: `${props.RES_DIR}/app2.JPG`,
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        },
+    ]
 
     return (
         <div id='project-content'>
@@ -70,7 +85,7 @@ const PageProject_1_OrBit = (props) => {
                 Orbit is a motion-sensing device for musicians and performers.
                 It bridges the gap between acoustic and digital music by connecting
                 you to your favourite digital effects and sounds. The device connects wirelessly
-                to your DAW through the OrBit software plugin. 
+                to your DAW via the OrBit software plugin.
             </p>
 
             <div style={{ "paddingTop": "30px" }} />
@@ -83,17 +98,20 @@ const PageProject_1_OrBit = (props) => {
             <div style={{ "paddingTop": "30px" }} />
 
             <p className='p'>
-                This project was carried out in a team of four, my role was of CTO
-
-                <br/><br/>
-
                 The project was conducted as part of an enterprise module at Imperial
-                College London. One deliverable for the module,  half way through the
-                product's development, was a promotional website and video. 
+                College London as a team of four. The project started with a product concept
+                and progressed into a well developed hardware/software prototype. The team
+                adopted the name BitLabs and I took on the role of CTO.
+
+                <br /><br />
+                One deliverable for the module, produced half way
+                through OrBit's development, was a public website & video that would
+                promote the product. This was
+
             </p>
 
             <p className='p' style={{ 'fontWeight': '600', "textAlign": "right" }}>
-                Promotional Website Available <a href="http://www.bitlabs.uk/private"
+                Promotional Website Available <a href="http://www.bitlabs.uk/"
                     target="_blank"
                     rel='noopener noreferrer'>
                     here.</a>
@@ -115,7 +133,29 @@ const PageProject_1_OrBit = (props) => {
                 </div>
             </LazyLoad>
 
-            <div className="separator" />
+            <p className='p'>
+                Developed alongside the physical prototype was a mobile app that 
+                would imitate the functionality of the hardware. The app was developed
+                using React Native and was given a skeumorphic design to help
+                give a convincing experience of the real product.
+
+                <br/><br/>
+
+                Communication between the mobile app and the host DAW was 
+                facilitated by a websocket connection. The connection was served using
+                Node.js, which was hosted in a Max for Live device.
+                 
+            </p>
+
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_B}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={200} />
+                </div>
+            </LazyLoad>
 
         </div>
     );

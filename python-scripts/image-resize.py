@@ -2,7 +2,7 @@ from PIL import Image
 import os
 import imghdr
 
-RES_DIR = "../alexgourlay_com/resources/projects/2_Horizons/Originals"
+RES_DIR = "../alexgourlay_com/resources/projects/opt"
 
 # Height of optimised images.
 height = 1000
@@ -30,8 +30,9 @@ def optimise_image(path, height, quality, namePrefix):
           .format(im.size) + sizeof_fmt(os.path.getsize(path)))
 
     # Convert to RGB format if not already in that format.
-    if not path.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG', '.gif')):
-        im = im.convert("RGB")
+    # if not path.
+    # endswith(('.jpg', '.jpeg', '.JPG', '.JPEG', '.gif')):
+        # im = im.convert("RGB")
 
     im_size = im.size
     im_ratio = im_size[1]/im_size[0]

@@ -157,7 +157,7 @@ const PageProject_0_AXPendula = (props) => {
             <p className="p">
 
             The budget for the project was £100 and construction of the installation took around 1 week. Each pendulum consisted of
-            a 2W white LED cluster, a plastic Christmas tree bauble, a 3D printed ceramic part and a small magnet. Each was suspended
+            a 2W white LED cluster, a plastic tree bauble, a 3D printed ceramic part and a small magnet. Each was suspended
             using polyamide thread. Hall effect sensors were used to sense the pendulums passing through the centre.
 
             </p>

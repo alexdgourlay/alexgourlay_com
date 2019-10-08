@@ -11,7 +11,7 @@
         "id" : "1",
         "date" : "21-04-2019",
         "title" : "OrBit",
-        "tags" : ["Product Design", "Music Tech", "Ableton"],
+        "tags" : ["Product Design", "Music Tech", "Ableton", "Node js"],
         "dir" : "resources/projects/1_OrBit",
         "img" : "1_OrBit/OPT_A_OrBit.jpg"
     },
