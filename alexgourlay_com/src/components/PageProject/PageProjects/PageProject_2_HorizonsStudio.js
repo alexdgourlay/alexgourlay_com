@@ -22,6 +22,12 @@ const PageProject_2_HorizonsStudio = (props) => {
             caption:"Procedural Sea Vines"
         },
         {
+            src: `${props.RES_DIR}/nsynth.gif`,
+            thumbnail: `${props.RES_DIR}/nsynth.gif`,
+            thumbnailWidth: 1280,
+            thumbnailHeight: 800,
+        },
+        {
             src: `${props.RES_DIR}/2.png`,
             thumbnail: `${props.RES_DIR}/2.png`,
             thumbnailWidth: 320,
@@ -34,6 +40,18 @@ const PageProject_2_HorizonsStudio = (props) => {
             thumbnailWidth: 255,
             thumbnailHeight: 320,
         },
+        {
+            src: `${props.RES_DIR}/ball_cloth.gif`,
+            thumbnail: `${props.RES_DIR}/ball_cloth.gif`,
+            thumbnailWidth: 1280,
+            thumbnailHeight: 800,
+        },
+        // {
+        //     src: `${props.RES_DIR}/supershape.gif`,
+        //     thumbnail: `${props.RES_DIR}/supershape.gif`,
+        //     thumbnailWidth: 1280,
+        //     thumbnailHeight: 800,
+        // },
     ];
 
     const IMAGES_B = [
