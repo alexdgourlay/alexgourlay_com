@@ -27,7 +27,8 @@
         "id" : "3",
         "date" : "21-02-2019",
         "title" : "VitaRun",
-        "tags" : ["App Dev", "Android", "Smart Healthcare"],
+        "dir": "resources/projects/3_VitaRun",
+        "tags" : ["Android", "Smart Healthcare", "Data Analysis"],
         "img" : "3_VitaRun/VitaRun_Over_Shoulder_Crop.png"
     },
     {

@@ -30,14 +30,14 @@ def optimise_image(path, height, quality, namePrefix):
           .format(im.size) + sizeof_fmt(os.path.getsize(path)))
 
     # Convert to RGB format if not already in that format.
-    # if not path.
-    # endswith(('.jpg', '.jpeg', '.JPG', '.JPEG', '.gif')):
-        # im = im.convert("RGB")
+    if not path.endswith(('.jpg', '.jpeg', '.JPG', '.JPEG', '.gif')):
+        im = im.convert("RGB")
 
     im_size = im.size
     im_ratio = im_size[1]/im_size[0]
 
-    out = im.resize((height, round(im_ratio*height)), Image.ANTIALIAS)
+    out = im.resize((height, round(im_ratio*height)),
+                    Image.ANTIALIAS)
 
     split_path = os.path.split(path)
     out_name = namePrefix + split_path[1]

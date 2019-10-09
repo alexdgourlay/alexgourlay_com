@@ -46,18 +46,6 @@ const PageProject_0_AXPendula = (props) => {
             thumbnailHeight: 320,
             caption: "Design by Fan Mo"
         },
-        // {
-        //     src: `${props.RES_DIR}/0.jpg`,
-        //     thumbnail: `${props.RES_DIR}/0.jpg`,
-        //     thumbnailWidth: 478,
-        //     thumbnailHeight: 320,
-        // },
-        // {
-        //     src: `${props.RES_DIR}/4.jpg`,
-        //     thumbnail: `${props.RES_DIR}/4.jpg`,
-        //     thumbnailWidth: 240,
-        //     thumbnailHeight: 320,
-        // },
     ]
 
     const IMAGES_B = [
@@ -79,11 +67,32 @@ const PageProject_0_AXPendula = (props) => {
             thumbnailWidth: 440,
             thumbnailHeight: 320,
         },
-          {
+        {
             src: `${props.RES_DIR}/3.jpg`,
             thumbnail: `${props.RES_DIR}/3.jpg`,
             thumbnailWidth: 667,
             thumbnailHeight: 320,
+        },
+    ]
+
+    const IMAGES_C = [
+        {
+            src: `${props.RES_DIR}/0.jpg`,
+            thumbnail: `${props.RES_DIR}/0.jpg`,
+            thumbnailWidth: 478,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/4.jpg`,
+            thumbnail: `${props.RES_DIR}/4.jpg`,
+            thumbnailWidth: 240,
+            thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_13.JPG`,
+            thumbnail: `${props.RES_DIR}/OPT_13.JPG`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 750,
         },
     ]
 
@@ -136,6 +145,12 @@ const PageProject_0_AXPendula = (props) => {
 
             <p className="p">
 
+                The pendulum lengths were calculated so that the phase of each pendulum would align after
+                a set amount of time. This arrangement resulted in a light sequence and melody that transitioned
+                from a unison chord into increasingly chaotic arpeggios before returning to its intial state.
+    
+            <br /><br />
+
                 The project was carried out by a team of students, in which I had a
                 leading role. I covered the development of the installation's software
                 and also undertook the task of sound design, which was fulfilled using
@@ -156,11 +171,23 @@ const PageProject_0_AXPendula = (props) => {
 
             <p className="p">
 
-            The budget for the project was £100 and construction of the installation took around 1 week. Each pendulum consisted of
-            a 2W white LED cluster, a plastic tree bauble, a 3D printed ceramic part and a small magnet. Each was suspended
-            using polyamide thread. Hall effect sensors were used to sense the pendulums passing through the centre.
-
+                The budget for the project was £100 and construction of the installation took around 1 week. Each pendulum consisted of
+                a 2W white LED cluster, a plastic tree bauble, a 3D printed ceramic part and a small magnet. Each was suspended
+                using polyamide thread. Hall effect sensors were used to sense the pendulums passing through the centre by picking
+                up the magnetic field of the attached magnets.
             </p>
+
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_C}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={200}
+                        backdropClosesModal={true} />
+
+                </div>
+            </LazyLoad>
 
 
         </div >
