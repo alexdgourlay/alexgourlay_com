@@ -104,9 +104,10 @@ const PageProject_1_OrBit = (props) => {
                 adopted the name BitLabs and I took on the role of CTO.
 
                 <br /><br />
-                One deliverable for the module, produced half way
-                through OrBit's development, was a public website & video that would
-                promote the product. This was
+                The team produced two promotional videos for the product. The footage for the
+                first video was taken during a user testing session with different musicians. This
+                video was then published to the Bitlabs public website. The second video produced
+                was as part of a Kickstarter campaign page.
 
             </p>
 
@@ -137,14 +138,17 @@ const PageProject_1_OrBit = (props) => {
                 Developed alongside the physical prototype was a mobile app that
                 would imitate the functionality of the hardware. The app was developed
                 using React Native and was given a skeumorphic design to help
-                give a convincing experience of the real product.
-
-                <br /><br />
-
-                Communication between the mobile app and the host DAW was
+                give a convincing experience of the real product. Communication between the mobile app and the host DAW was
                 facilitated by a websocket connection. The connection was served using
                 Node.js, which was hosted in a Max for Live device.
 
+                <br/><br/>
+
+                Developing the app was an integral part of the early stages of the business
+                strategy for the product. The strategy was to try and acquire backers and 
+                users before the hardware product was released by distributing a limited
+                yet functional experience for free.
+                
             </p>
 
             <LazyLoad height={200}>

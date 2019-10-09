@@ -34,6 +34,9 @@ const PageProject_2_HorizonsStudio = (props) => {
             thumbnailWidth: 255,
             thumbnailHeight: 320,
         },
+    ];
+
+    const IMAGES_B = [
         {
             src: `${props.RES_DIR}/4.jpg`,
             thumbnail: `${props.RES_DIR}/4.jpg`,
@@ -48,7 +51,7 @@ const PageProject_2_HorizonsStudio = (props) => {
             thumbnailHeight: 320,
             caption: "PureData Patching"
         },
-    ];
+    ]
 
     return (
 
