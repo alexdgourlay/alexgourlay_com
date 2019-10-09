@@ -54,8 +54,10 @@ const PageProjectTemplate = (props) => {
                 <ProjectComp
                     project={project}
                     RES_DIR={`${links['github_dir']}/${project.dir}`} />
+                <hr />
             </div>
-            <div style={{"paddingBottom":"200px"}}></div>
+            <div style={{ "paddingBottom": "100px" }}></div>s
+
         </Suspense>
     );
 }

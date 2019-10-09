@@ -40,11 +40,10 @@ const PageProject_0_AXPendula = (props) => {
             thumbnailHeight: 320,
         },
         {
-            src: `${props.RES_DIR}/9.jpg`,
-            thumbnail: `${props.RES_DIR}/9.jpg`,
-            thumbnailWidth: 427,
-            thumbnailHeight: 320,
-            caption: "Design by Fan Mo"
+            src: `${props.RES_DIR}/OPT_FB_AXP.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_FB_AXP.jpg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1439,
         },
     ]
 
@@ -72,6 +71,13 @@ const PageProject_0_AXPendula = (props) => {
             thumbnail: `${props.RES_DIR}/3.jpg`,
             thumbnailWidth: 667,
             thumbnailHeight: 320,
+        },
+        {
+            src: `${props.RES_DIR}/9.jpg`,
+            thumbnail: `${props.RES_DIR}/9.jpg`,
+            thumbnailWidth: 427,
+            thumbnailHeight: 320,
+            caption: "Design by Fan Mo"
         },
     ]
 
@@ -148,7 +154,7 @@ const PageProject_0_AXPendula = (props) => {
                 The pendulum lengths were calculated so that the phase of each pendulum would align after
                 a set amount of time. This arrangement resulted in a light sequence and melody that transitioned
                 from a unison chord into increasingly chaotic arpeggios before returning to its intial state.
-    
+
             <br /><br />
 
                 The project was carried out by a team of students, in which I had a
