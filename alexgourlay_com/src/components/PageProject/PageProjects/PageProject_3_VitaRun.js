@@ -10,11 +10,20 @@ const PageProject_3_VitaRun = (props) => {
 
     const IMAGES_A = [
         {
-            src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
-            thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
+            src: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
+            thumbnail: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnailWidth: 1000,
             thumbnailHeight: 750,
         },
+        {
+            src: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
+            thumbnail: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 750,
+        },
+    ];
+
+    const IMAGES_B = [
         {
             src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
             thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
