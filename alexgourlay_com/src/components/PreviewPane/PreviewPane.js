@@ -18,6 +18,8 @@ const PreviewPane = (props) => {
         <div style={{}}>
             <p 
             style={{"textAlign":"justified center", 
+                    "maxWidth":"400px",
+                    "fontFamily":"serif",
                     "fontSize":"40px",
                     "paddingTop":"30px", 
                     "paddingRight":"40px",
@@ -25,7 +27,7 @@ const PreviewPane = (props) => {
                     "fontColor":"white"}}>
                 Hello and welcome to my portfolio site, to find out 
                 more about me and my work, click <b style={{"color":"red"}}>here</b>, otherwise
-                hover and select a project from the left 👈.
+                hover and select a project from the left. 👈
             </p>
         </div>
     );

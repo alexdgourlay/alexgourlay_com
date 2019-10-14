@@ -19,7 +19,7 @@ const PageProject_2_HorizonsStudio = (props) => {
             thumbnail: `${props.RES_DIR}/1.png`,
             thumbnailWidth: 255,
             thumbnailHeight: 320,
-            caption:"Procedural Sea Vines"
+            caption: "Procedural Sea Vines"
         },
         {
             src: `${props.RES_DIR}/nsynth.gif`,
@@ -55,6 +55,13 @@ const PageProject_2_HorizonsStudio = (props) => {
     ];
 
     const IMAGES_B = [
+        {
+            src: `${props.RES_DIR}/me_vr.jpg`,
+            thumbnail: `${props.RES_DIR}/me_vr.jpg`,
+            thumbnailWidth: 2000,
+            thumbnailHeight: 1309,
+            caption: "",
+        },
         {
             src: `${props.RES_DIR}/4.jpg`,
             thumbnail: `${props.RES_DIR}/4.jpg`,
@@ -95,11 +102,14 @@ const PageProject_2_HorizonsStudio = (props) => {
                 _title="Vimeo Video"
                 _src="https://player.vimeo.com/video/361057084" />
 
-            <div className="separator"/>
+            <div className="separator" />
 
             <p className='p'>
-                Interactions and assets were developed inside Unity and interactive audio
-                patches were developed using PureData.
+                Interactions and assets were developed inside Unity. I explored various techniques of
+                procedurally generating shapes, using Unity's mesh class to programmatically
+                define vertex positions. I also explored various simulation methods, including
+                Craig Reynolds' boids algorithm which was used to create the motion behaviour 
+                of my 'Shoal Sequencer' scene.
 
             </p>
 
@@ -107,6 +117,23 @@ const PageProject_2_HorizonsStudio = (props) => {
                 <div className="gallery-div">
                     <Gallery
                         images={IMAGES_A}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={200} />
+                </div>
+            </LazyLoad>
+
+            <p className='p'>
+                The responsive audio for the interactions was developed using PureData,
+                a visual programming language used for digital signal processing, before being compiled
+                into a Unity C# plugin. I used my existing sound design knowledge to generate 
+
+            </p>
+
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_B}
                         enableImageSelection={false}
                         margin={4}
                         rowHeight={200} />
