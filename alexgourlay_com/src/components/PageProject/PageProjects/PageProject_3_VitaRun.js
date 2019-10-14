@@ -13,13 +13,13 @@ const PageProject_3_VitaRun = (props) => {
             src: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnail: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnailWidth: 1000,
-            thumbnailHeight: 750,
+            thumbnailHeight: 562,
         },
         {
             src: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
             thumbnail: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 750,
+            thumbnailWidth: 699,
+            thumbnailHeight: 552,
         },
     ];
 
@@ -27,6 +27,12 @@ const PageProject_3_VitaRun = (props) => {
         {
             src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
             thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 750,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_vita_run.png`,
+            thumbnail: `${props.RES_DIR}/OPT_vita_run.png`,
             thumbnailWidth: 1000,
             thumbnailHeight: 750,
         },
@@ -58,6 +64,16 @@ const PageProject_3_VitaRun = (props) => {
                 <div className="gallery-div">
                     <Gallery
                         images={IMAGES_A}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={200} />
+                </div>
+            </LazyLoad>
+
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_B}
                         enableImageSelection={false}
                         margin={4}
                         rowHeight={200} />
