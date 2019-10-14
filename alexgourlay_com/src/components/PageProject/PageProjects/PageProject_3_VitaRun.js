@@ -34,7 +34,37 @@ const PageProject_3_VitaRun = (props) => {
             src: `${props.RES_DIR}/OPT_vita_run.png`,
             thumbnail: `${props.RES_DIR}/OPT_vita_run.png`,
             thumbnailWidth: 1000,
-            thumbnailHeight: 750,
+            thumbnailHeight: 562,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_ss_05.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_ss_05.jpg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 2165,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_ss_06.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_ss_06.jpg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 2165,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_ss_04.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_ss_04.jpg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 2165,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_ss_01.png`,
+            thumbnail: `${props.RES_DIR}/OPT_ss_01.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 2165,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_ss_03.jpg`,
+            thumbnail: `${props.RES_DIR}/OPT_ss_03.jpg`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 2165,
         },
     ];
 
@@ -57,7 +87,7 @@ const PageProject_3_VitaRun = (props) => {
             </p>
 
             <Image
-                src={`${props.RES_DIR}/system_diagram.jpeg`}
+                src={`${props.RES_DIR}/System_diagram.jpeg`}
                 fluid />
 
             <LazyLoad height={200}>
