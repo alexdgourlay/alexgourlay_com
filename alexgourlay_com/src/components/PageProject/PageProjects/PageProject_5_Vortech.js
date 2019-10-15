@@ -16,10 +16,11 @@ const PageProject_5_Vortech = (props) => {
 
             {
                 pages.map((val) => {
-                    return <LazyLoad height={200}>
+                    return <LazyLoad height={200} key={val}>
                         <div className="image-div">
                             <Image
                                 src={`${props.RES_DIR}/${val}.jpg`}
+                                key = {val}
                                 fluid
                             />
                         </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import LazyLoad from 'react-lazyload';
 import Gallery from 'react-grid-gallery';
 
 import '../PageProject.css'
 
 const PageProject_3_VitaRun = (props) => {
-
 
     const IMAGES_A = [
         {
@@ -115,10 +115,10 @@ const PageProject_3_VitaRun = (props) => {
 
             <div className="separator" />
 
-            <Image
-                src={`${props.RES_DIR}/OPT_vita_combo.png`}
-                fluid
-            />
+                <Image
+                    src={`${props.RES_DIR}/OPT_vita_combo.png`}
+                    fluid
+                />
 
             <div className="separator" />
 
@@ -128,7 +128,7 @@ const PageProject_3_VitaRun = (props) => {
                         images={IMAGES_B}
                         enableImageSelection={false}
                         margin={10}
-                        rowHeight={400} />
+                        rowHeight={350} />
                 </div>
             </LazyLoad>
 
@@ -138,7 +138,7 @@ const PageProject_3_VitaRun = (props) => {
                         images={IMAGES_C}
                         enableImageSelection={false}
                         margin={10}
-                        rowHeight={400} />
+                        rowHeight={350} />
                 </div>
             </LazyLoad>
 

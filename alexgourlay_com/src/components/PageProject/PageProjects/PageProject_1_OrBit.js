@@ -55,23 +55,23 @@ const PageProject_1_OrBit = (props) => {
 
     const IMAGES_B = [
         {
-            src: `${props.RES_DIR}/app1.JPG`,
-            thumbnail: `${props.RES_DIR}/app1.JPG`,
-            thumbnailWidth: 750,
-            thumbnailHeight: 1334,
+            src: `${props.RES_DIR}/app1_iphone.png`,
+            thumbnail: `${props.RES_DIR}/app1_iphone.png`,
+            thumbnailWidth: 572,
+            thumbnailHeight: 1000,
         },
         {
-            src: `${props.RES_DIR}/app2.JPG`,
-            thumbnail: `${props.RES_DIR}/app2.JPG`,
-            thumbnailWidth: 750,
-            thumbnailHeight: 1334,
+            src: `${props.RES_DIR}/app2_iphone.png`,
+            thumbnail: `${props.RES_DIR}/app2_iphone.png`,
+            thumbnailWidth: 572,
+            thumbnailHeight: 1000,
         },
-        {
-            src: `${props.RES_DIR}/3.jpg`,
-            thumbnail: `${props.RES_DIR}/3.jpg`,
-            thumbnailWidth: 480,
-            thumbnailHeight: 320,
-        },
+        // {
+        //     src: `${props.RES_DIR}/3.jpg`,
+        //     thumbnail: `${props.RES_DIR}/3.jpg`,
+        //     thumbnailWidth: 480,
+        //     thumbnailHeight: 320,
+        // },
     ]
 
     return (
@@ -156,8 +156,8 @@ const PageProject_1_OrBit = (props) => {
                     <Gallery
                         images={IMAGES_B}
                         enableImageSelection={false}
-                        margin={4}
-                        rowHeight={200} />
+                        margin={10}
+                        rowHeight={400} />
                 </div>
             </LazyLoad>
 

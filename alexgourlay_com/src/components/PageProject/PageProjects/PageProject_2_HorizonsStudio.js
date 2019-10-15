@@ -2,6 +2,8 @@ import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Gallery from 'react-grid-gallery';
 
+import Jumbotron from 'react-bootstrap/Jumbotron';
+
 import '../PageProject.css'
 import MyIFrame from '../../MyIFrame/MyIFrame';
 
@@ -98,6 +100,7 @@ const PageProject_2_HorizonsStudio = (props) => {
 
             <div className="separator" />
 
+        
             <MyIFrame
                 _title="Vimeo Video"
                 _src="https://player.vimeo.com/video/361057084" />
