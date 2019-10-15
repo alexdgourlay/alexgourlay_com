@@ -1,41 +1,72 @@
 [
     {
-        "id" : "0",
-        "date" : "13-02-2018",
-        "title" : "AXPendula",
-        "tags" : ["Audio Visual", "Max MSP", "Installation"],
-        "dir" : "resources/projects/0_AXPendula",
-        "img" : "0_AXPendula/OPT_AXPendula_Hero_LDF.png"
+        "id": "0",
+        "date": "13-02-2018",
+        "title": "AXPendula",
+        "tags": [
+            "Audio Visual",
+            "Max MSP",
+            "Installation"
+        ],
+        "dir": "resources/projects/0_AXPendula",
+        "img": "0_AXPendula/OPT_AXPendula_Hero_LDF.png"
     },
     {
-        "id" : "1",
-        "date" : "21-04-2019",
-        "title" : "OrBit",
-        "tags" : ["Product Design", "Music Tech", "Ableton", "Node js"],
-        "dir" : "resources/projects/1_OrBit",
-        "img" : "1_OrBit/OPT_A_OrBit.jpg"
+        "id": "1",
+        "date": "21-04-2019",
+        "title": "OrBit",
+        "tags": [
+            "Product Design",
+            "Music Tech",
+            "Ableton",
+            "Node js"
+        ],
+        "dir": "resources/projects/1_OrBit",
+        "img": "1_OrBit/OPT_A_OrBit.jpg"
     },
     {
-        "id" : "2",
-        "date" : "21-07-2018",
-        "title" : "Horizons Studio",
-        "tags" : ["Virtual Reality", "Music Tech", "PureData"],
-        "dir" : "resources/projects/2_Horizons",
-        "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
+        "id": "2",
+        "date": "21-07-2018",
+        "title": "Horizons Studio",
+        "tags": [
+            "Virtual Reality",
+            "Music Tech",
+            "PureData"
+        ],
+        "dir": "resources/projects/2_Horizons",
+        "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg"
     },
     {
-        "id" : "3",
-        "date" : "21-02-2019",
-        "title" : "VitaRun",
+        "id": "3",
+        "date": "21-02-2019",
+        "title": "VitaRun",
         "dir": "resources/projects/3_VitaRun",
-        "tags" : ["Android", "Smart Healthcare", "Data Analysis"],
-        "img" : "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png"
+        "tags": [
+            "Android",
+            "Smart Healthcare",
+            "Data Analysis"
+        ],
+        "img": "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png"
     },
     {
-        "id" : "4",
-        "date" : "21-02-2019",
-        "title" : "Portfolio Website",
-        "tags" : ["React JS", "UI"],
-        "img" : "2_Horizons/OPT_HD_ShoalFishStill.jpg"
+        "id": "4",
+        "date": "21-02-2019",
+        "title": "Portfolio Website",
+        "tags": [
+            "React JS",
+            "UI"
+        ],
+        "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg"
+    },
+    {
+        "id": "5",
+        "date": "21-02-2019",
+        "title": "Vortech",
+        "dir": "resources/projects/5_Vortech",
+        "tags": [
+            "CAD Design",
+            "Medical"
+        ],
+        "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg"
     }
 ]

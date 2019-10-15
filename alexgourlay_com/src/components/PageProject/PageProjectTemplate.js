@@ -12,6 +12,7 @@ const AXPendula = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
 const OrBit = lazy(() => import('./PageProjects/PageProject_1_OrBit'));
 const HorizonsStudio = lazy(() => import('./PageProjects/PageProject_2_HorizonsStudio'));
 const VitaRun = lazy(() => import('./PageProjects/PageProject_3_VitaRun'));
+const Vortech = lazy(() => import('./PageProjects/PageProject_5_Vortech'));
 
 const PageProjectTemplate = (props) => {
 
@@ -24,6 +25,7 @@ const PageProjectTemplate = (props) => {
         OrBit: [1, OrBit],
         HorizonsStudio: [2, HorizonsStudio],
         VitaRun: [3, VitaRun],
+        Vortech: [5, Vortech]
     }
 
     const ProjectComp = pages[projectTitle][1];

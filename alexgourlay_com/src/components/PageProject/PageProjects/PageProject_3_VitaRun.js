@@ -113,6 +113,15 @@ const PageProject_3_VitaRun = (props) => {
                 style, along with other relevant metrics about their current run.
             </p>
 
+            <div className="separator" />
+
+            <Image
+                src={`${props.RES_DIR}/OPT_vita_combo.png`}
+                fluid
+            />
+
+            <div className="separator" />
+
             <LazyLoad height={200}>
                 <div className="gallery-div">
                     <Gallery
@@ -133,8 +142,13 @@ const PageProject_3_VitaRun = (props) => {
                 </div>
             </LazyLoad>
 
+
+            <p className='p'>
+                The mobile app was developed for Android devices, using Android studio.
+            </p>
+
             <LazyLoad height={200}>
-                <hr />
+
                 <div className="gallery-div">
                     <Gallery
                         images={IMAGES_A}
@@ -142,7 +156,6 @@ const PageProject_3_VitaRun = (props) => {
                         margin={4}
                         rowHeight={200} />
                 </div>
-                <hr />
             </LazyLoad>
 
         </div>
