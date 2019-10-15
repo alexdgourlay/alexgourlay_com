@@ -1,5 +1,5 @@
 import React from 'react';
-
+import LazyLoad from 'react-lazyload';
 import Image from 'react-bootstrap/Image';
 
 
@@ -16,13 +16,16 @@ const PageProject_5_Vortech = (props) => {
 
             {
                 pages.map((val) => {
-                    return <div>
-                        <Image
-                            src={`${props.RES_DIR}/${val}.jpg`}
-                            fluid
-                        />
+                    return <LazyLoad height={200}>
+                        <div className="image-div">
+                            <Image
+                                src={`${props.RES_DIR}/${val}.jpg`}
+                                fluid
+                            />
+                        </div>
                         <div className="separator" />
-                    </div>;
+                    </LazyLoad>
+
                 })
             }
         </div>
