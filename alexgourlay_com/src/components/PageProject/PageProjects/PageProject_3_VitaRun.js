@@ -31,24 +31,6 @@ const PageProject_3_VitaRun = (props) => {
 
     const IMAGES_B = [
         {
-            src: `${props.RES_DIR}/OPT_Picture1.png`,
-            thumbnail: `${props.RES_DIR}/OPT_Picture1.png`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 1733,
-        },
-        {
-            src: `${props.RES_DIR}/OPT_Picture3.png`,
-            thumbnail: `${props.RES_DIR}/OPT_Picture3.png`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 1733,
-        },
-        {
-            src: `${props.RES_DIR}/OPT_Picture4.png`,
-            thumbnail: `${props.RES_DIR}/OPT_Picture4.png`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 1733,
-        },
-        {
             src: `${props.RES_DIR}/OPT_Picture5.png`,
             thumbnail: `${props.RES_DIR}/OPT_Picture5.png`,
             thumbnailWidth: 1000,
@@ -57,6 +39,12 @@ const PageProject_3_VitaRun = (props) => {
         {
             src: `${props.RES_DIR}/OPT_Picture6.png`,
             thumbnail: `${props.RES_DIR}/OPT_Picture6.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture4.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture4.png`,
             thumbnailWidth: 1000,
             thumbnailHeight: 1733,
         },
@@ -70,6 +58,21 @@ const PageProject_3_VitaRun = (props) => {
 
     const IMAGES_C = [
         {
+            src: `${props.RES_DIR}/OPT_Picture1.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture1.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture3.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture3.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+    ]
+
+    const IMAGES_D = [
+        {
             src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
             thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
             thumbnailWidth: 1000,
@@ -78,6 +81,12 @@ const PageProject_3_VitaRun = (props) => {
         {
             src: `${props.RES_DIR}/OPT_vita_run.png`,
             thumbnail: `${props.RES_DIR}/OPT_vita_run.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 562,
+        },
+        {
+            src: `${props.RES_DIR}/GraphicAsset4.png`,
+            thumbnail: `${props.RES_DIR}/GraphicAsset4.png`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
         },
@@ -92,20 +101,37 @@ const PageProject_3_VitaRun = (props) => {
             </p>
 
             <p className='p'>
-                VitaRun is a mobile smart-healthcare app that integrates pressure sensing insoles and machine learning
-                to provide personalised feedback on your running style.
+                VitaRun is a mobile smart-healthcare app that integrates smart insoles with machine learning
+                to provide personalised feedback on your running style, to help avoid injury.
 
                 <br /><br />
 
-                Injuries resulting from abnormal pronation or high impact force while running can
-                are at risk of
+                Poor technique, characterised by a high impact force or abnormal pronation while running,
+                puts runners at risk of injury. VitaRun addresses these issues by monitoring features
+                of the users gait using pressure sensors and an IMU embedded in a smart insole.
+                Live feedback is provided, informing the runner on issues with their
+                style, along with other relevant metrics about their current run.
             </p>
 
-            <div className="image-div">
-                <Image
-                    src={`${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`}
-                    fluid />
-            </div>
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_B}
+                        enableImageSelection={false}
+                        margin={10}
+                        rowHeight={400} />
+                </div>
+            </LazyLoad>
+
+            <LazyLoad height={200}>
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_C}
+                        enableImageSelection={false}
+                        margin={10}
+                        rowHeight={400} />
+                </div>
+            </LazyLoad>
 
             <LazyLoad height={200}>
                 <hr />
@@ -115,18 +141,6 @@ const PageProject_3_VitaRun = (props) => {
                         enableImageSelection={false}
                         margin={4}
                         rowHeight={200} />
-                </div>
-                <hr />
-            </LazyLoad>
-
-            <LazyLoad height={200}>
-                <hr />
-                <div className="gallery-div">
-                    <Gallery
-                        images={IMAGES_B}
-                        enableImageSelection={false}
-                        margin={10}
-                        rowHeight={400} />
                 </div>
                 <hr />
             </LazyLoad>
