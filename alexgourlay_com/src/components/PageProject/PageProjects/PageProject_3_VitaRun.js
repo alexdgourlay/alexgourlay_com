@@ -10,6 +10,12 @@ const PageProject_3_VitaRun = (props) => {
 
     const IMAGES_A = [
         {
+            src: `${props.RES_DIR}/system_diagram.jpeg`,
+            thumbnail: `${props.RES_DIR}/system_diagram.jpeg`,
+            thumbnailWidth: 1920,
+            thumbnailHeight: 1080,
+        },
+        {
             src: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnail: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnailWidth: 1000,
@@ -24,6 +30,45 @@ const PageProject_3_VitaRun = (props) => {
     ];
 
     const IMAGES_B = [
+        {
+            src: `${props.RES_DIR}/OPT_Picture1.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture1.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture3.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture3.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture4.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture4.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture5.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture5.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture6.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture6.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+        {
+            src: `${props.RES_DIR}/OPT_Picture7.png`,
+            thumbnail: `${props.RES_DIR}/OPT_Picture7.png`,
+            thumbnailWidth: 1000,
+            thumbnailHeight: 1733,
+        },
+    ];
+
+    const IMAGES_C = [
         {
             src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
             thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
@@ -56,11 +101,14 @@ const PageProject_3_VitaRun = (props) => {
                 are at risk of
             </p>
 
-            <Image
-                src={`${props.RES_DIR}/System_diagram.jpeg`}
-                fluid />
+            <div className="image-div">
+                <Image
+                    src={`${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`}
+                    fluid />
+            </div>
 
             <LazyLoad height={200}>
+                <hr />
                 <div className="gallery-div">
                     <Gallery
                         images={IMAGES_A}
@@ -68,16 +116,19 @@ const PageProject_3_VitaRun = (props) => {
                         margin={4}
                         rowHeight={200} />
                 </div>
+                <hr />
             </LazyLoad>
 
             <LazyLoad height={200}>
+                <hr />
                 <div className="gallery-div">
                     <Gallery
                         images={IMAGES_B}
                         enableImageSelection={false}
-                        margin={4}
-                        rowHeight={200} />
+                        margin={10}
+                        rowHeight={400} />
                 </div>
+                <hr />
             </LazyLoad>
 
         </div>

@@ -24,3 +24,7 @@ code {
 a { 
   color: red;
 }
+
+hr {
+  border-top: 3px solid black;
+}

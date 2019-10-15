@@ -8,7 +8,20 @@ div.gallery-div {
     margin-bottom: 50px;
     display: block;
     overflow: auto;
+    animation: fadeIn 3.0s ease;
+    -webkit-animation: fadeIn 3.0s ease;
+    -moz-animation: fadeIn 3.0s ease;
+    -o-animation: fadeIn 3.0s ease;
+    -ms-animation: fadeIn 3.0s ease;
     /* border: dashed 2px blue; */
+}
+
+div.image-div {
+    animation: fadeIn 1.0s ease;
+    -webkit-animation: fadeIn 1.0s ease;
+    -moz-animation: fadeIn 1.0s ease;
+    -o-animation: fadeIn 1.0s ease;
+    -ms-animation: fadeIn 1.0s ease;
 }
 
 br {
@@ -35,6 +48,7 @@ br {
     /* border-right: solid gray 1px; */
     /* border-left: solid gray 1px; */
     /* border: dashed red 1px; */
+
 }
 
 #hero_img {
@@ -50,7 +64,7 @@ br {
 .p {
     max-width: 600px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12pt;
     line-height: 1.5;
     border: dashed black 1 px;
