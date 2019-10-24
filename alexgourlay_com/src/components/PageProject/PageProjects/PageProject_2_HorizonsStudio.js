@@ -2,7 +2,6 @@ import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Gallery from 'react-grid-gallery';
 
-import Jumbotron from 'react-bootstrap/Jumbotron';
 
 import '../PageProject.css'
 import MyIFrame from '../../MyIFrame/MyIFrame';

@@ -46,8 +46,7 @@ export default class ProjectTile extends React.Component {
     render() {
 
         let project = this.props.project;
-        let titleNoSpaces = project.title.replace(/\s/g, '');
-
+ 
         if (this.state.redirect) {
             return (
                 <Redirect to={{

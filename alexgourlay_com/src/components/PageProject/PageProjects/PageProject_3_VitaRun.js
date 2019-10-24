@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+
 import LazyLoad from 'react-lazyload';
 import Gallery from 'react-grid-gallery';
 
@@ -101,26 +101,29 @@ const PageProject_3_VitaRun = (props) => {
             </p>
 
             <p className='p'>
-                VitaRun is a mobile smart-healthcare app that integrates smart insoles with machine learning
-                to provide personalised feedback on your running style, to help avoid injury.
+                VitaRun is a mobile smart healthcare app that uses pressure sensing insoles and
+                machine learning to provide live, personalised feedback on your running style. The
+                feedback helps runners reduce their chance of injury by communcating information about
+                their gait and stride frequency. The app features a user profile system, allowing users to
+                consolidate historical information about their style, in order to monitor improvements over
+                time.
 
-                <br /><br />
+            </p>
+            <div className="separator" />
+            <Image
+                src={`${props.RES_DIR}/OPT_vita_combo.png`}
+                fluid
+            />
+            <div className="separator" />
 
+            <p className="p">
                 Poor technique, characterised by a high impact force or abnormal pronation while running,
-                puts runners at risk of injury. VitaRun addresses these issues by monitoring features
-                of the users gait using pressure sensors and an IMU embedded in a smart insole.
-                Live feedback is provided, informing the runner on issues with their
-                style, along with other relevant metrics about their current run.
+                    puts runners at risk of injury. VitaRun addresses these issues by monitoring features
+                    of the users gait using pressure sensors and an IMU embedded in a smart insole.
+                    Live feedback is provided, informing the runner on issues with their
+                    style, along with other relevant metrics about their current run.
             </p>
 
-            <div className="separator" />
-
-                <Image
-                    src={`${props.RES_DIR}/OPT_vita_combo.png`}
-                    fluid
-                />
-
-            <div className="separator" />
 
             <LazyLoad height={200}>
                 <div className="gallery-div">
