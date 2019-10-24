@@ -122,10 +122,7 @@ const PageProject_3_VitaRun = (props) => {
                 VitaRun is a mobile smart healthcare app that uses pressure sensing insoles and
                 machine learning to provide live, personalised feedback on your running style. The
                 feedback helps runners reduce their chance of injury by communcating information about
-                their gait and stride frequency. The app features a user profile system, allowing users to
-                consolidate historical information about their style, in order to monitor improvements over
-                time.
-
+                their gait and stride frequency.
             </p>
             <div className="separator" />
             <Image
@@ -135,10 +132,9 @@ const PageProject_3_VitaRun = (props) => {
             <div className="separator" />
 
             <p className="p">
-                Poor running style, characterised by a high impact force or abnormal pronation while running,
-                    puts runners at risk of injury. VitaRun addresses these issues by monitoring features
-                    of the users gait through pressure sensors and an IMU embedded in a smart insole.
-                    Live feedback is provided, in the form of speech response , along with other relevant metrics about their current run.
+                VitaRun features a user profile system, allowing users to
+                consolidate historical information about their running style, in order to monitor improvements over
+                time.
             </p>
 
 
