@@ -8,28 +8,22 @@ import './PageProject.css'
 import projects from '../../data/projects.json';
 import links from '../../data/links.json';
 
-const AXPendula = lazy(() => import('./PageProjects/PageProject_0_AXPendula'));
-const OrBit = lazy(() => import('./PageProjects/PageProject_1_OrBit'));
-const HorizonsStudio = lazy(() => import('./PageProjects/PageProject_2_HorizonsStudio'));
-const VitaRun = lazy(() => import('./PageProjects/PageProject_3_VitaRun'));
-const Vortech = lazy(() => import('./PageProjects/PageProject_5_Vortech'));
+const projectPages = [
+    lazy(() => import('./PageProjects/PageProject_0_AXPendula')),
+    lazy(() => import('./PageProjects/PageProject_1_OrBit')),
+    lazy(() => import('./PageProjects/PageProject_2_HorizonsStudio')),
+    lazy(() => import('./PageProjects/PageProject_3_VitaRun')),
+    lazy(() => import('./PageProjects/PageProject_5_Vortech')),
+];
 
 const PageProjectTemplate = (props) => {
 
-    const projectTitle = props.match.params.projectTitle;
+    const projectKey = props.match.params.projectKey;
 
-    document.title = `AG Portfolio - ${projectTitle}`;
+    document.title = `AG Portfolio - ${projects[projectKey].title}`;
 
-    const pages = {
-        AXPendula: [0, AXPendula],
-        OrBit: [1, OrBit],
-        HorizonsStudio: [2, HorizonsStudio],
-        VitaRun: [3, VitaRun],
-        Vortech: [5, Vortech]
-    }
-
-    const ProjectComp = pages[projectTitle][1];
-    const project = projects[pages[projectTitle][0]];
+    // Assign reference to correct project react component.
+    const ProjectComp = projectPages[projectKey];
 
     return (
         <Suspense
@@ -46,16 +40,16 @@ const PageProjectTemplate = (props) => {
             }>
             <div id="project-main-body">
                 <ProjectTile
-                    key={project.id}
-                    project={project}
+                    key={projects[projectKey].id}
+                    project={projects[projectKey]}
                     match={props.match}
                     animation={false}
                     handleTileEnter={() => { }}
                     handleTileExit={() => { }}
                 />
                 <ProjectComp
-                    project={project}
-                    RES_DIR={`${links['github_dir']}/${project.dir}`} />
+                    project={projects[projectKey]}
+                    RES_DIR={`${links['github_dir']}/${projects[projectKey].dir}`} />
                 <hr />
             </div>
             <div style={{ "paddingBottom": "100px" }}></div>s

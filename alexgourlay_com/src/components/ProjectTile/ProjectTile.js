@@ -51,7 +51,7 @@ export default class ProjectTile extends React.Component {
         if (this.state.redirect) {
             return (
                 <Redirect to={{
-                    pathname: `${this.props.match.url}Projects/${titleNoSpaces}`,
+                    pathname: `${this.props.match.url}Projects/${project.id}`,
 
                     // Attempt to supply project state to component
                     // state: {

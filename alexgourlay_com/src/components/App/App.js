@@ -18,7 +18,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={PageHome} />
           <Route exact path="/AboutMe" component={PageAboutMe} />
-          <Route path="/Projects/:projectTitle" exact component={PageProjectTemplate} />
+          <Route path="/Projects/:projectKey" exact component={PageProjectTemplate} />
           <Route component={Page404} />
         </Switch>
         <ConnectFooter />
