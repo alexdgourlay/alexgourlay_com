@@ -72,21 +72,39 @@ const PageProject_3_VitaRun = (props) => {
     ]
 
     const IMAGES_D = [
+        // {
+        //     src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
+        //     thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
+        //     thumbnailWidth: 1000,
+        //     thumbnailHeight: 750,
+        // },
+        // {
+        //     src: `${props.RES_DIR}/OPT_vita_run.png`,
+        //     thumbnail: `${props.RES_DIR}/OPT_vita_run.png`,
+        //     thumbnailWidth: 1000,
+        //     thumbnailHeight: 562,
+        // },
+        // {
+        //     src: `${props.RES_DIR}/GraphicAsset4.png`,
+        //     thumbnail: `${props.RES_DIR}/GraphicAsset4.png`,
+        //     thumbnailWidth: 1000,
+        //     thumbnailHeight: 562,
+        // },
         {
-            src: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
-            thumbnail: `${props.RES_DIR}/OPT_VitaRun_Over_Shoulder_Crop.png`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 750,
+            src: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
+            thumbnail: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
+            thumbnailWidth: 1483,
+            thumbnailHeight: 852,
         },
         {
-            src: `${props.RES_DIR}/OPT_vita_run.png`,
-            thumbnail: `${props.RES_DIR}/OPT_vita_run.png`,
+            src: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
+            thumbnail: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
         },
         {
-            src: `${props.RES_DIR}/GraphicAsset4.png`,
-            thumbnail: `${props.RES_DIR}/GraphicAsset4.png`,
+            src: `${props.RES_DIR}/boxplots.png`,
+            thumbnail: `${props.RES_DIR}/boxplots.png`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
         },
@@ -117,11 +135,10 @@ const PageProject_3_VitaRun = (props) => {
             <div className="separator" />
 
             <p className="p">
-                Poor technique, characterised by a high impact force or abnormal pronation while running,
+                Poor running style, characterised by a high impact force or abnormal pronation while running,
                     puts runners at risk of injury. VitaRun addresses these issues by monitoring features
-                    of the users gait using pressure sensors and an IMU embedded in a smart insole.
-                    Live feedback is provided, informing the runner on issues with their
-                    style, along with other relevant metrics about their current run.
+                    of the users gait through pressure sensors and an IMU embedded in a smart insole.
+                    Live feedback is provided, in the form of speech response , along with other relevant metrics about their current run.
             </p>
 
 
@@ -158,6 +175,17 @@ const PageProject_3_VitaRun = (props) => {
                         enableImageSelection={false}
                         margin={4}
                         rowHeight={200} />
+                </div>
+            </LazyLoad>
+
+            <LazyLoad height={200}>
+
+                <div className="gallery-div">
+                    <Gallery
+                        images={IMAGES_D}
+                        enableImageSelection={false}
+                        margin={4}
+                        rowHeight={100} />
                 </div>
             </LazyLoad>
 
