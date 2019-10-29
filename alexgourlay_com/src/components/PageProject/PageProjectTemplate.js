@@ -13,6 +13,7 @@ const projectPages = [
     lazy(() => import('./PageProjects/PageProject_1_OrBit')),
     lazy(() => import('./PageProjects/PageProject_2_HorizonsStudio')),
     lazy(() => import('./PageProjects/PageProject_3_VitaRun')),
+    lazy(() => import('./PageProjects/PageProject_4_PersonalWebsite')),
     lazy(() => import('./PageProjects/PageProject_5_Vortech')),
 ];
 

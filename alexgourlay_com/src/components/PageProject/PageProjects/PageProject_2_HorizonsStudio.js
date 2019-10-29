@@ -111,7 +111,7 @@ const PageProject_2_HorizonsStudio = (props) => {
                 procedurally generating shapes, using Unity's mesh class to programmatically
                 define vertex positions. I also explored various simulation methods, including
                 Craig Reynolds' boids algorithm which was used to create the motion behaviour 
-                of my 'Shoal Sequencer' scene.
+                of the 'shoal sequencer' scene.
 
             </p>
 
@@ -128,7 +128,8 @@ const PageProject_2_HorizonsStudio = (props) => {
             <p className='p'>
                 The responsive audio for the interactions was developed using PureData,
                 a visual programming language used for digital signal processing, before being compiled
-                into a Unity C# plugin. I used my existing sound design knowledge to generate 
+                into a Unity C# plugin. I called on my experience in sound design when
+                developing a variety of different synthesis methods for patches.
 
             </p>
 

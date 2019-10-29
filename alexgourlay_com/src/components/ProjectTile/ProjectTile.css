@@ -10,7 +10,7 @@
 
 .tile:hover {
     border: 20px black;
-    background: rgba(40, 40, 40, 0.1);
+    background: darkred 30%;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
@@ -65,7 +65,8 @@ p {
 
 .tag {
     font-size: 0.7rem;
-    font-style: italic;
+    line-height: 0.9;
+    /* font-style: italic; */
     display: inline;
     margin: 0%;
 }

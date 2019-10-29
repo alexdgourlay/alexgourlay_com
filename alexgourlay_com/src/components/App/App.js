@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HeadBar from '../HeadBar/HeadBar';
 import ConnectFooter from '../ConnectFooter/ConnectFooter.js';
 
+import P5Wrapper from 'react-p5-wrapper';
+import { sketch } from '../../p5Sketch';
+
 import PageHome from '../PageHome/PageHome';
 import PageAboutMe from '../PageAboutMe/PageAboutMe';
 import PageProjectTemplate from '../PageProject/PageProjectTemplate';
@@ -14,13 +17,18 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <div id="canvas">
+          <P5Wrapper sketch={sketch} />
+        </div>
         <HeadBar />
-        <Switch>
-          <Route exact path="/" component={PageHome} />
-          <Route exact path="/AboutMe" component={PageAboutMe} />
-          <Route path="/Projects/:projectKey" exact component={PageProjectTemplate} />
-          <Route component={Page404} />
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path="/" component={PageHome} />
+            <Route exact path="/AboutMe" component={PageAboutMe} />
+            <Route path="/Projects/:projectKey" exact component={PageProjectTemplate} />
+            <Route component={Page404} />
+          </Switch>
+        </div>
         <ConnectFooter />
       </Router>
     )

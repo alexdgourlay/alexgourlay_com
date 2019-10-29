@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "p5": "^0.10.2",
+    "react-p5-wrapper": "^2.0.0"
+  }
+}

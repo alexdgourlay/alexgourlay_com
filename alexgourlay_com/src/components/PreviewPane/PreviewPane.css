@@ -1,11 +1,67 @@
 #image {
-    /* width :100%; */
-    max-height:100%;
+    width :100%;
+    max-height: 700px;
     transition: opacity 2s ease-out;
     object-fit: scale-down;
-    /* padding: 200px; */
+    border-width: 40px;
+    border-style: solid;
+    border-color: black;
+    /* border: white 2px solid;
+    box-shadow: 0px 0px 80px 0px rgba(10, 10, 10, 1); */
+    animation: fadeIn 2.0s ease;
+    -webkit-animation: fadeIn 2.0s ease;
+    -moz-animation: fadeIn 2.0s ease;
+    -o-animation: fadeIn 2.0s ease;
+    -ms-animation: fadeIn 2.0s ease;
+    /* animation: kenburns 30s infinite; */
+}
 
-    animation: kenburns 30s infinite;
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 @keyframes kenburns {

@@ -91,6 +91,12 @@ const PageProject_3_VitaRun = (props) => {
         //     thumbnailHeight: 562,
         // },
         {
+            src: `${props.RES_DIR}/strid_stock.jpg`,
+            thumbnail: `${props.RES_DIR}/strid_stock.jpg`,
+            thumbnailWidth: 700,
+            thumbnailHeight: 600,
+        },
+        {
             src: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
             thumbnail: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
             thumbnailWidth: 1483,
@@ -99,12 +105,6 @@ const PageProject_3_VitaRun = (props) => {
         {
             src: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
             thumbnail: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
-            thumbnailWidth: 1000,
-            thumbnailHeight: 562,
-        },
-        {
-            src: `${props.RES_DIR}/boxplots.png`,
-            thumbnail: `${props.RES_DIR}/boxplots.png`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
         },
@@ -121,8 +121,8 @@ const PageProject_3_VitaRun = (props) => {
             <p className='p'>
                 VitaRun is a mobile smart healthcare app that uses pressure sensing insoles and
                 machine learning to provide live, personalised feedback on your running style. The
-                feedback helps runners reduce their chance of injury by communcating information about
-                their gait and stride frequency.
+                feedback helps you reduce your chance of injury by communicating information about
+                your gait and stride frequency.
             </p>
             <div className="separator" />
             <Image
@@ -148,6 +148,13 @@ const PageProject_3_VitaRun = (props) => {
                 </div>
             </LazyLoad>
 
+            
+            <p className='p'>
+                Live feedback is provided in the form of audible speech feedback
+                as well as text recommendations within the app. 
+            </p>
+
+
             <LazyLoad height={200}>
                 <div className="gallery-div">
                     <Gallery
@@ -160,7 +167,8 @@ const PageProject_3_VitaRun = (props) => {
 
 
             <p className='p'>
-                The mobile app was developed for Android devices, using Android studio.
+                The mobile app was developed for Android devices, using Android studio, and written 
+                in Java. 
             </p>
 
             <LazyLoad height={200}>
