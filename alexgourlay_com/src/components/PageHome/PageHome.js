@@ -4,9 +4,6 @@ import CrossHairs from '../CrossHairs/CrossHairs';
 import PreviewPane from '../PreviewPane/PreviewPane';
 import ProjectTile from '../ProjectTile/ProjectTile';
 
-import P5Wrapper from 'react-p5-wrapper';
-import {sketch} from '../../p5Sketch';
-
 import projects from '../../data/projects.json';
 
 import './PageHome.css';
@@ -58,14 +55,8 @@ class PageHome extends React.Component {
   }
 
   render() {
-
-    var canvas = this.state.isMobile ? <div /> : <P5Wrapper sketch={sketch} />;
-
     return (
       <div>
-        <div id="canvas">
-          {/* {canvas} */}
-        </div>
         <div id="PageHome">
           <CrossHairs
             tileHovered={this.state.projectHovered} >
@@ -85,10 +76,12 @@ class PageHome extends React.Component {
                   ))
                 }
               </div>
+              <div style={{position:"fixed", zIndex:"-1"}}>
 
               <PreviewPane
                 github_url={this.state.github_url}
                 project={this.state.projectHovered} />
+                </div>
 
             </div>
           </CrossHairs>

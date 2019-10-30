@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { GoMarkGithub } from 'react-icons/go';
-import { TiSocialLinkedin } from 'react-icons/ti';
+import { TiSocialLinkedin, TiSocialVimeo } from 'react-icons/ti';
+
 
 import links from '../../data/links.json';
 
@@ -14,14 +15,18 @@ const ConnectFooter = (props) => {
     return (
         <div id="container">
             <div>
-                <GoMarkGithub
-                    className="footer-icon"
-                    size={iconSize}
-                    onClick={() => window.open(links.github)} />
                 <TiSocialLinkedin
                     className='footer-icon'
                     size={iconSize}
                     onClick={() => window.open(links.linkedin)} />
+                <GoMarkGithub
+                    className="footer-icon"
+                    size={iconSize}
+                    onClick={() => window.open(links.github)} />
+                <TiSocialVimeo
+                    className='footer-icon'
+                    size={iconSize}
+                    onClick={() => window.open(links.vimeo)} />
             </div>
             <div>
                 <p className="footer-text">
