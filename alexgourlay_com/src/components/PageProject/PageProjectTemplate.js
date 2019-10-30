@@ -15,6 +15,7 @@ const projectPages = [
     lazy(() => import('./PageProjects/PageProject_3_VitaRun')),
     lazy(() => import('./PageProjects/PageProject_4_PersonalWebsite')),
     lazy(() => import('./PageProjects/PageProject_5_Vortech')),
+    lazy(() => import('./PageProjects/PageProject_6_SustainableToothbrush')),
 ];
 
 const PageProjectTemplate = (props) => {

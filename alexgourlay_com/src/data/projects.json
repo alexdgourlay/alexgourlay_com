@@ -68,5 +68,16 @@
             "Medical"
         ],
         "img": "5_Vortech/OPT_vortech_combo.png"
+    },
+    {
+        "id": "6",
+        "date": "21-02-2019",
+        "title": "Sustainable Toothbrush",
+        "dir": "resources/projects/6_SustainableToothbrush",
+        "tags": [
+            "CAD Design",
+            "Eco Design"
+        ],
+        "img": "5_Vortech/OPT_vortech_combo.png"
     }
 ]

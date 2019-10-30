@@ -1,10 +1,8 @@
 #headbar-container {
     /* border: 2px blue dashed; */
+    background: r
 }
 
-#headbar-container :hover {
-    box-shadow: 5px 5px 20px whitesmoke;
-}
 
 .titleText {
     text-align: center;
