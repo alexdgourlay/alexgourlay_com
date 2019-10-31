@@ -10,7 +10,7 @@ div.gallery-div {
     overflow: auto;
     animation: fadeIn 3.0s ease;
     align-content: center;
-    background: rgba(255,255,250,0.);
+    background: rgba(255, 255, 250, 0.);
     z-index: 99;
     -webkit-animation: fadeIn 3.0s ease;
     -moz-animation: fadeIn 3.0s ease;
@@ -20,7 +20,7 @@ div.gallery-div {
 }
 
 div.image-div {
-    z-index:99;
+    z-index: 99;
     animation: fadeIn 1.0s ease;
     -webkit-animation: fadeIn 1.0s ease;
     -moz-animation: fadeIn 1.0s ease;
@@ -39,11 +39,12 @@ br {
     margin-left: auto;
     margin-right: auto;
     padding: 3%;
+    border-left: 20%;
+    border-right: 20%;
     /* border: dashed black 1px; */
-    color: white;
-    background: radial-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2));
+    color: black;
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255,255,255,0.7) 100%);
     /* filter: drop-shadow(10px 10px 4px black); */
-
 }
 
 #project-content {
@@ -56,7 +57,6 @@ br {
     /* border-right: solid gray 1px; */
     /* border-left: solid gray 1px; */
     /* border: dashed red 1px; */
-
 }
 
 #hero_img {

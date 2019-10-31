@@ -3,7 +3,7 @@ export const sketch = (p) => {
     let _width = p.windowWidth;
     let _height = p.windowHeight;
     let zoom = 200;
-    let backColor = 0;
+    let backColor = 255;
     let maxRadius = 10;
     let trackSpeed = 0.1;
     let res = 20;
@@ -40,10 +40,10 @@ export const sketch = (p) => {
             if (val > 30) {
               p.fill(val);
             } else {
-              p.fill(23, 503, 35);
+              p.fill(255, 10, 3);
             }
   
-            var rad = 50 * maxRadius / val *  p.mouseY /_height;
+            var rad = 50 * maxRadius / val *  p.mouseY /_height / 1.8;
   
             p.ellipse(x, y, rad, rad);
             // rect(x, y, rad, rad);

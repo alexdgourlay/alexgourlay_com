@@ -1,18 +1,18 @@
 #PageHome {
     align-self: center;
-    position: relative;
     min-height: 100vh;
     max-height: 100%;
     max-width: 100%;
     margin-left: 2%;
-    color: white;
+    color: black;
 }
 
 #main-body {
     /* display: inline-block; */
+    float:left;
     position:relative;
     padding-bottom: 60px;
-    vertical-align: top; 
+    vertical-align: top;
 }
 
 #canvas {
@@ -22,24 +22,22 @@
 
 .tileGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 0;
+    grid-template-columns: repeat(auto-fit, 200px);
     align-content: left;
-    width: 29%;
+    width: 40%;
     float: left;
-    /* border: dashed red 2px; */
 }
 
 .tileGridElement {
     align-content: left;
     width: 100%;
-    max-width: 200px;
 }
 
 #preview-container {
     overflow: hidden;
-    float:right;
-    width: 69%;
+    float: right;
+    width: 59%;
     margin-right: 2%;
-    /* max-width: 90%; */
-    /* border: dashed blue 2px; */
+    border: dashed blue 2px;
 }
