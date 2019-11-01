@@ -61,7 +61,7 @@ class PageHome extends React.Component {
           <CrossHairs
             tileHovered={this.state.projectHovered} >
 
-            <div id="main_body">
+          
               <div className="tileGrid">
                 {
                   this.state.projects.map((project) => (
@@ -76,14 +76,14 @@ class PageHome extends React.Component {
                   ))
                 }
               </div>
-              <div style={{position:"fixed", zIndex:"-1"}}>
+              <div id="preview-container">
 
               <PreviewPane
                 github_url={this.state.github_url}
                 project={this.state.projectHovered} />
                 </div>
 
-            </div>
+      
           </CrossHairs>
 
         </div>

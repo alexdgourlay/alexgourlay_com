@@ -1,19 +1,14 @@
 #PageHome {
-    align-self: center;
-    min-height: 100vh;
-    max-height: 100%;
-    max-width: 100%;
+    /* align-self: center; */
+    height: 80vh;
+    /* max-width: 100%; */
+
     margin-left: 2%;
+    margin-right: 2%;
     color: black;
+    /* border: dashed blue 2px; */
 }
 
-#main-body {
-    /* display: inline-block; */
-    float:left;
-    position:relative;
-    padding-bottom: 60px;
-    vertical-align: top;
-}
 
 #canvas {
     position: fixed;
@@ -25,19 +20,27 @@
     grid-column-gap: 0;
     grid-template-columns: repeat(auto-fit, 200px);
     align-content: left;
+    
+    padding-bottom: 100px;
     width: 40%;
+    
     float: left;
+    /* border: dashed red 2px; */
 }
 
 .tileGridElement {
     align-content: left;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #preview-container {
+    position: fixed;
+    top: 10;
+    right: 0;
     overflow: hidden;
     float: right;
-    width: 59%;
-    margin-right: 2%;
-    border: dashed blue 2px;
+    max-height: 100%;
+    max-width: 59%;
+    
+    /* border: dashed green 2px; */
 }

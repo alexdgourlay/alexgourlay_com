@@ -8,16 +8,16 @@ const PreviewPane = (props) => {
 
     if (props.project !== null) {
         return (
-            <div id="preview-container">
+          
                 <img
                     id='image'
                     alt='Project Preview'
                     src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
-            </div>
+        
         )
 
     } else return (
-        <div id="preview-container">
+        <div >
             {/* <div style={{
                 // top:"50%",
                 // left:"50%",
