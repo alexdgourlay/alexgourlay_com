@@ -16,6 +16,24 @@
     /* animation: kenburns 30s infinite; */
 }
 
+#image-onLoad {
+  
+   width: 100%;
+
+    transition: opacity 2s ease-out;
+    object-fit: scale-down;
+    border-width: 40px;
+    border-style: solid;
+    border-color: white;
+    animation: fadeIn 2.0s ease;
+
+    -webkit-animation: fadeIn 2.0s ease;
+    -moz-animation: fadeIn 2.0s ease;
+    -o-animation: fadeIn 2.0s ease;
+    -ms-animation: fadeIn 2.0s ease;
+    /* animation: kenburns 30s infinite; */
+}
+
 
 /* ANIMATIONS */
 

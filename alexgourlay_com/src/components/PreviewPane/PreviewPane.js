@@ -7,30 +7,16 @@ const RES_DIR = 'resources/projects';
 const PreviewPane = (props) => {
 
     if (props.project !== null) {
+
         return (
-          
-                <img
-                    id='image'
-                    alt='Project Preview'
-                    src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
-        
+            <img
+                id='image'
+                alt='Project Preview'
+                src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
+
         )
-
     } else return (
-        <div >
-            {/* <div style={{
-                // top:"50%",
-                // left:"50%",
-                overflow: "hidden",
-                width: "100%",
-                height: "100%",
-                
-            }}>
-
-                <P5Wrapper sketch={sketch} />
-            </div> */}
-        </div>
-        // <TextFiller/>
+        <div/>
     );
 }
 

@@ -4,11 +4,16 @@ export const sketch = (p) => {
   let _height = p.windowHeight;
   let zoom = 200;
   let backColor = 255;
-  let maxRadius = 10;
+  let maxRadius = 8;
   let trackSpeed = 0.1;
-  let res = 20;
+  let res = 30;
+
+
+  // let noiseVals;
 
   var canvas;
+
+  p.disableFriendlyErrors = true;
 
   p.windowResized = function () {
 
@@ -23,12 +28,20 @@ export const sketch = (p) => {
     p.background(backColor);
     p.noStroke();
 
-    p.frameRate(30);
+    for (var x = -_width / 2; x < _width / 2; x += res) {
+      for (var y = -_height / 2; y < _height / 2; y += res) {
+
+      }
+    }
+
+    p.frameRate(20);
   }
 
 
   var prevMouseX;
   var prevMouseY;
+
+  // var val = 0;
 
   p.draw = function () {
 
@@ -48,8 +61,7 @@ export const sketch = (p) => {
 
             p.fill(val);
 
-
-            var rad = 25 * maxRadius / val * p.mouseY / _height;
+            var rad = 30 * maxRadius / val * p.mouseY / _height;
 
             p.ellipse(x, y, rad, rad);
             // rect(x, y, rad, rad);
@@ -62,3 +74,7 @@ export const sketch = (p) => {
     prevMouseY = p.mouseY;
   }
 }
+
+// p.background(255 * Math.abs(Math.sin(val)), 255 * Math.abs(Math.cos(val/2)), 0 );
+
+// val += 0.01;

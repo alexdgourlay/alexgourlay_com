@@ -58,9 +58,8 @@ class PageHome extends React.Component {
     return (
       <div>
         <div id="PageHome">
-          <CrossHairs
-            tileHovered={this.state.projectHovered} >
-
+          {/* <CrossHairs
+            tileHovered={this.state.projectHovered} > */}
           
               <div className="tileGrid">
                 {
@@ -84,7 +83,7 @@ class PageHome extends React.Component {
                 </div>
 
       
-          </CrossHairs>
+          {/* </CrossHairs> */}
 
         </div>
       </div>

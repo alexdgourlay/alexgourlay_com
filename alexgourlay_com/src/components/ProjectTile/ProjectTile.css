@@ -59,13 +59,15 @@
 p {
     font-size: 0.5rem;
     text-align: justify;
-    line-height: 1.2;
+    line-height: 1.4;
     padding: 0px;
 }
 
 .tag {
-    font-size: 0.7rem;
-    line-height: 0.9;
+    font-size: 10pt;
+    font-weight: 500;
+    /* line-height: 0.4; */
+
     /* font-style: italic; */
     display: inline;
     margin: 0%;
