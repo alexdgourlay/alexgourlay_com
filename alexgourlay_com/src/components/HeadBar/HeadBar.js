@@ -6,7 +6,7 @@ import './HeadBar.css';
 const HeadBar = (props) => (
     <div>
         <div id="headbar-container">
-            <Link to={'/'}>
+            <Link to={'/home'}>
                 <div className='titleText'>
                     <span>
                         AG

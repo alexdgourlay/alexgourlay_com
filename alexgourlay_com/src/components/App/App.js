@@ -11,21 +11,24 @@ import PageHome from '../PageHome/PageHome';
 import PageAboutMe from '../PageAboutMe/PageAboutMe';
 import PageProjectTemplate from '../PageProject/PageProjectTemplate';
 import Page404 from '../Page404/Page404'
+import {createBrowserHistory} from 'history';
+
+const history = createBrowserHistory();
 
 class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL} history={history}>
         <div id="canvas">
           <P5Wrapper sketch={sketch} />
         </div>
         <HeadBar />
         <div>
           <Switch>
-            <Route exact path="/" component={PageHome} />
+            <Route exact path="/home" component={PageHome} />
             <Route exact path="/AboutMe" component={PageAboutMe} />
-            <Route path="/Projects/:projectKey" exact component={PageProjectTemplate} />
+            <Route exact path="/Projects/:projectKey" exact component={PageProjectTemplate} />
             <Route component={Page404} />
           </Switch>
         </div>
