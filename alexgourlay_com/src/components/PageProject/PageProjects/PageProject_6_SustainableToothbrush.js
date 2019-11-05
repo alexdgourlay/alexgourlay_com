@@ -5,7 +5,8 @@ import Image from 'react-bootstrap/Image';
 
 const PageProject_5_Vortech = (props) => {
 
-    const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const pages = [1, 2, 3, 4, 5, 7, 8, 10, 11,
+                    12, 13, 14, 15, 17, 18, 19, 20, 21];
 
     return (
         <div id="project-content">

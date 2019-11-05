@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import SyncLoader from 'react-spinners/SyncLoader';
 
 import './PreviewPane.css';
 
@@ -9,14 +10,29 @@ const PreviewPane = (props) => {
     if (props.project !== null) {
 
         return (
-            <img
-                id='image'
-                alt='Project Preview'
-                src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
+            <Suspense
+                fallback={
+
+                    <div>
+                        <SyncLoader
+                            css={{ position: 'fixed', top: '50%', left: '50%', marginRight: '100px', marginBottom: '50px' }}
+                            sizeUnit={'px'}
+                            size={10}
+                            color={'#676767'}
+                            loading={true} />
+                    </div>
+                }>
+
+                <img
+                    id='image'
+                    alt='Project Preview'
+                    src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
+                    
+            </Suspense>
 
         )
     } else return (
-        <div/>
+        <div />
     );
 }
 
