@@ -33,7 +33,7 @@
 }
 
 #title {
-    font-weight: 600;
+    font-weight: 800;
     max-width: 100%;
     background-image: linear-gradient(120deg, #EC4D37 0%, #1D1B1B 100%);
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 }
 
 #title_noAnimation {
-    font-weight: 600;
+    font-weight: 800;
     max-width: 100%;
     background-image: linear-gradient(120deg, #EC4D37 0%, #1D1B1B 100%);
     background-repeat: no-repeat;

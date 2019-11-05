@@ -14,18 +14,21 @@ const PageProject_3_VitaRun = (props) => {
             thumbnail: `${props.RES_DIR}/system_diagram.jpeg`,
             thumbnailWidth: 1920,
             thumbnailHeight: 1080,
+            caption: "Graphic by Kenza Zoutine"
         },
         {
             src: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnail: `${props.RES_DIR}/OPT_Wireframe-1.jpeg`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
+            caption: "Graphic by Kenza Zoutine"
         },
         {
             src: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
             thumbnail: `${props.RES_DIR}/OPT_Wireframe-2.jpeg`,
             thumbnailWidth: 699,
             thumbnailHeight: 552,
+            caption: "Graphic by Kenza Zoutine"
         },
     ];
 
@@ -95,18 +98,21 @@ const PageProject_3_VitaRun = (props) => {
             thumbnail: `${props.RES_DIR}/strid_stock.jpg`,
             thumbnailWidth: 700,
             thumbnailHeight: 600,
+
         },
         {
             src: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
             thumbnail: `${props.RES_DIR}/2_Normalized_data_zoom.PNG`,
             thumbnailWidth: 1483,
             thumbnailHeight: 852,
+            caption: "Normalised data"
         },
         {
             src: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
             thumbnail: `${props.RES_DIR}/5_Frequency_and_split.PNG`,
             thumbnailWidth: 1000,
             thumbnailHeight: 562,
+            caption: "Step identification"
         },
     ];
 
@@ -133,8 +139,8 @@ const PageProject_3_VitaRun = (props) => {
 
             <p className="p">
                 VitaRun features a user profile system, allowing users to
-                consolidate historical information about their running style, in order to monitor improvements over
-                time.
+                store and consolidate historical information about how their running style changes
+                over time.
             </p>
 
 
@@ -148,10 +154,11 @@ const PageProject_3_VitaRun = (props) => {
                 </div>
             </LazyLoad>
 
-            
+
             <p className='p'>
-                Live feedback is provided in the form of audible speech feedback
-                as well as text recommendations within the app. 
+                The UI provides a means of establishing a BLE connection with the smart insoles along with
+                an interactive data visualisation fragment for exploring past runs. Live feedback is provided
+                 in the form of audible speech feedback as well as text recommendations within the app.
             </p>
 
 
@@ -167,8 +174,10 @@ const PageProject_3_VitaRun = (props) => {
 
 
             <p className='p'>
-                The mobile app was developed for Android devices, using Android studio, and written 
-                in Java. 
+                The mobile app was developed for Android devices, using Android studio, and written
+                in Java. The app was structured using nested fragments to create components with
+                independent lifecycles. Communication with the backend was facilitated by GET/POST requests
+                to an HTTP server.
             </p>
 
             <LazyLoad height={200}>
@@ -182,6 +191,12 @@ const PageProject_3_VitaRun = (props) => {
                 </div>
             </LazyLoad>
 
+            <p className='p'>
+                A LSTM (Long Short-Term Memory) RNN (Recurrent Neural Network) machine learning model
+                was implemented using Python in order to classify running style from the
+                labelled data.
+            </p>
+
             <LazyLoad height={200}>
 
                 <div className="gallery-div">
@@ -189,7 +204,7 @@ const PageProject_3_VitaRun = (props) => {
                         images={IMAGES_D}
                         enableImageSelection={false}
                         margin={4}
-                        rowHeight={100} />
+                        rowHeight={200} />
                 </div>
             </LazyLoad>
 

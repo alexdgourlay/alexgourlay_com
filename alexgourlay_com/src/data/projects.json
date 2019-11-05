@@ -9,7 +9,7 @@
             "Installation"
         ],
         "dir": "resources/projects/0_AXPendula",
-        "img": "0_AXPendula/OPT_AXPendula_Hero_LDF.png"
+        "img": "0_AXPendula/OPT_A_AXPendula.JPG"
     },
     {
         "id": "1",
@@ -52,11 +52,12 @@
         "id": "4",
         "date": "21-02-2019",
         "title": "Portfolio Website",
+        "dir":"resources/projects/4_PortfolioWebsite",
         "tags": [
             "React JS",
             "UI"
         ],
-        "img": ""
+        "img": "4_PortfolioWebsite"
     },
     {
         "id": "5",
