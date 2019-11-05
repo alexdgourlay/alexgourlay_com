@@ -17,7 +17,11 @@ const history = createBrowserHistory();
 
 class App extends React.Component {
 
+
   render() {
+
+    console.log(history.location);
+
     return (
       <Router basename={process.env.PUBLIC_URL} history={history}>
         <div id="canvas">
@@ -28,7 +32,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/home" component={PageHome} />
             <Route exact path="/AboutMe" component={PageAboutMe} />
-            <Route exact path="/Projects/:projectKey" exact component={PageProjectTemplate} />
+            <Route exact path="/Projects/:projectKey" component={PageProjectTemplate} />
             <Route component={Page404} />
           </Switch>
         </div>
