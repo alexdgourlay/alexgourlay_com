@@ -1,12 +1,13 @@
 #headbar-container {
     /* border: 2px blue dashed; */
     margin: 10px;
+ 
     /* background: rgba(240,240,240,0.5); */
 }
 
 .titleText {
     /* font-family: 'IBM Plex Mono', monospace; */
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     /* letter-spacing: 15px; */
     color: gray;

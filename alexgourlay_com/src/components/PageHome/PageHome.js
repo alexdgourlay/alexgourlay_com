@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CrossHairs from '../CrossHairs/CrossHairs';
+// import CrossHairs from '../CrossHairs/CrossHairs';
 import PreviewPane from '../PreviewPane/PreviewPane';
 import ProjectTile from '../ProjectTile/ProjectTile';
 
@@ -25,7 +25,6 @@ class PageHome extends React.Component {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       this.setState({ isMobile: true });
     }
-
 
     this.handleTileEnter = this.handleTileEnter.bind(this);
     this.handleTileExit = this.handleTileExit.bind(this);

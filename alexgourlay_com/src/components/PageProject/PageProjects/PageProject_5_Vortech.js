@@ -14,7 +14,7 @@ const PageProject_5_Vortech = (props) => {
                 <b>My Role:</b><br /> Product Design, CAD Modelling, Software Development (Matlab)
             </p>
 
-            <div className="separator" />
+            {/* <div className="separator" /> */}
 
             <p className="p">
                 Vortech exists as a pair of medical devices, each used to measure different aspects of human

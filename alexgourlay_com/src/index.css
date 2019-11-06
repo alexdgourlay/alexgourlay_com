@@ -9,10 +9,10 @@
 
 body {
   margin: 0;
-  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: 'IBM Plex Sans', sans-serif;
   color: #0C020F;
   background: white;
-  font-family: 'IBM Plex Sans', sans-serif; font-weight: 500;
+  /* font-family: 'Archivo', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,6 +1,7 @@
 #image {
   
    width: 100%;
+   max-height: 800px;
 
     transition: opacity 2s ease-out;
     object-fit: scale-down;
@@ -9,10 +10,10 @@
     border-color: white;
     animation: fadeIn 2.0s ease;
 
-    -webkit-animation: fadeIn 2.0s ease;
-    -moz-animation: fadeIn 2.0s ease;
-    -o-animation: fadeIn 2.0s ease;
-    -ms-animation: fadeIn 2.0s ease;
+    -webkit-animation: fadeIn 1.0s ease-in-out;
+    -moz-animation: fadeIn 1.0s ease-in-out;
+    -o-animation: fadeIn 1.0s ease-in-out;
+    -ms-animation: fadeIn 1.0s ease-in-out;
     /* animation: kenburns 30s infinite; */
 }
 
