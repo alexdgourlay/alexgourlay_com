@@ -3,6 +3,7 @@
         "id": "0",
         "date": "13-02-2018",
         "title": "AXPendula",
+        "enabled" : true,
         "tags": [
             "Audio Visual",
             "Max MSP",
@@ -15,6 +16,7 @@
         "id": "1",
         "date": "21-04-2019",
         "title": "OrBit",
+        "enabled" : true,
         "tags": [
             "Product Design",
             "Music Tech",
@@ -28,6 +30,7 @@
         "id": "2",
         "date": "21-07-2018",
         "title": "Horizons Studio",
+        "enabled" : true,
         "tags": [
             "Virtual Reality",
             "Music Tech",
@@ -40,6 +43,7 @@
         "id": "3",
         "date": "21-02-2019",
         "title": "VitaRun",
+        "enabled" : true,
         "dir": "resources/projects/3_VitaRun",
         "tags": [
             "Android",
@@ -48,21 +52,12 @@
         ],
         "img": "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png"
     },
-    {
-        "id": "4",
-        "date": "21-02-2019",
-        "title": "Portfolio Website",
-        "dir":"resources/projects/4_PortfolioWebsite",
-        "tags": [
-            "React JS",
-            "UI"
-        ],
-        "img": "4_PortfolioWebsite"
-    },
+ 
     {
         "id": "5",
         "date": "21-02-2019",
         "title": "Vortech",
+        "enabled" : true,
         "dir": "resources/projects/5_Vortech",
         "tags": [
             "CAD Design",
@@ -74,6 +69,7 @@
         "id": "6",
         "date": "21-02-2019",
         "title": "Sustainable Toothbrush",
+        "enabled" : true,
         "dir": "resources/projects/6_SustainableToothbrush",
         "tags": [
             "CAD Design",

@@ -26,6 +26,7 @@ class PageHome extends React.Component {
       this.setState({ isMobile: true });
     }
 
+
     this.handleTileEnter = this.handleTileEnter.bind(this);
     this.handleTileExit = this.handleTileExit.bind(this);
   }
@@ -55,6 +56,7 @@ class PageHome extends React.Component {
   }
 
   render() {
+
     return (
       <div>
         <div id="PageHome">
@@ -64,6 +66,7 @@ class PageHome extends React.Component {
               <div className="tileGrid">
                 {
                   this.state.projects.map((project) => (
+
                     <div className="tileGridElement" key={project.id}>
                       <ProjectTile
                         key={project.id}

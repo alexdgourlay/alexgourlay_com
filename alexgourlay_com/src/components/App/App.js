@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import HeadBar from '../HeadBar/HeadBar';
 import ConnectFooter from '../ConnectFooter/ConnectFooter.js';
@@ -11,26 +11,21 @@ import PageHome from '../PageHome/PageHome';
 import PageAboutMe from '../PageAboutMe/PageAboutMe';
 import PageProjectTemplate from '../PageProject/PageProjectTemplate';
 import Page404 from '../Page404/Page404'
-import {createBrowserHistory} from 'history';
-
-const history = createBrowserHistory();
 
 class App extends React.Component {
 
-
   render() {
-
-    console.log(history.location);
-
     return (
-      <Router basename={process.env.PUBLIC_URL} history={history}>
+      <Router basename={process.env.PUBLIC_URL} >
         <div id="canvas">
           <P5Wrapper sketch={sketch} />
         </div>
         <HeadBar />
         <div>
           <Switch>
-            <Route exact path="/home" component={PageHome} />
+            <Route exact path="/" component={PageHome} />
+  
+            
             <Route exact path="/AboutMe" component={PageAboutMe} />
             <Route exact path="/Projects/:projectKey" component={PageProjectTemplate} />
             <Route component={Page404} />

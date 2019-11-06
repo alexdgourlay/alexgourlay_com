@@ -21,8 +21,9 @@ const projectPages = [
 const PageProjectTemplate = (props) => {
 
     const projectKey = props.match.params.projectKey;
+    const project = projects.find((project) => (project.id === projectKey));
 
-    document.title = `AG Portfolio - ${projects[projectKey].title}`;
+    document.title = `AG Portfolio - ${project.title}`;
 
     // Assign reference to correct project react component.
     const ProjectComp = projectPages[projectKey];
@@ -42,16 +43,16 @@ const PageProjectTemplate = (props) => {
             }>
             <div id="project-main-body">
                 <ProjectTile
-                    key={projects[projectKey].id}
-                    project={projects[projectKey]}
+                    key={project.id}
+                    project={project}
                     match={props.match}
                     animation={false}
                     handleTileEnter={() => { }}
                     handleTileExit={() => { }}
                 />
                 <ProjectComp
-                    project={projects[projectKey]}
-                    RES_DIR={`${links['github_dir']}/${projects[projectKey].dir}`} />
+                    project={project}
+                    RES_DIR={`${links['github_dir']}/${project.dir}`} />
                 <hr />
             </div>
             <div style={{ "paddingBottom": "100px" }}></div>s

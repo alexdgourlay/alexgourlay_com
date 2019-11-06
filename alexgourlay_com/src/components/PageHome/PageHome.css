@@ -25,12 +25,11 @@
     width: 40%;
     
     float: left;
-    /* border: dashed red 2px; */
+
 }
 
 .tileGridElement {
     align-content: left;
-    /* width: 100%; */
 }
 
 #preview-container {
@@ -41,6 +40,4 @@
     float: right;
     max-height: 100%;
     max-width: 59%;
-    
-    /* border: dashed green 2px; */
 }
