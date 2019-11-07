@@ -68,8 +68,7 @@ export default class ProjectTile extends React.Component {
                     ref={this.selector}
                 >
                     <div id="date">{project.date}</div>
-                    {/* <Link to={`${this.props.match.url}Projects/${titleNoSpaces}`} >
-                    </Link> */}
+
                     <div id={this.animation ? "title" : "title_noAnimation"}>
                         {project.title}
                     </div>

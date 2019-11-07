@@ -11,7 +11,7 @@
     -webkit-transition: all 0.2s cubic-bezier(0.165,0.84,0.44,1);
 
 }
-
+/* 
 .tile::after {
     content: '';
     position: absolute;
@@ -26,11 +26,18 @@
 
     transition: all 0.2s cubic-bezier(0.165,0.84,0.44,1);
     -webkit-transition: all 0.2s cubic-bezier(0.165,0.84,0.44,1);
-}
+} */
 
 .tile:hover {
     transform: scale(1.1,1.1);
     -webkkit-transform: scale(1.1,1.1);
+
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    
+    transition: all 0.2s cubic-bezier(0.165,0.84,0.44,1);
+    -webkit-transition: all 0.2s cubic-bezier(0.165,0.84,0.44,1);
+    
 
 }
 

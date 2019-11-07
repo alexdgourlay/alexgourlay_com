@@ -1,7 +1,8 @@
 #PageHome {
     /* align-self: center; */
     height: 80vh;
-    /* max-width: 100%; */
+    /* max-width: 300px; */
+    align-content: center;
 
     margin-left: 3%;
     margin-right: 5%;
@@ -25,11 +26,12 @@
     width: 40%;
     
     float: left;
-
+    /* border: red dashed 2px; */
 }
 
 .tileGridElement {
     align-content: left;
+    /* border: blue dashed 2px; */
 }
 
 #preview-container {
@@ -40,4 +42,5 @@
     float: right;
     max-height: 100%;
     max-width: 59%;
+    /* border: blue dashed 2px; */
 }
