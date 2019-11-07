@@ -1,4 +1,4 @@
-#preview-image {
+.preview-image {
   position: relative;
   width: 90%;
   max-height: 800px;
@@ -9,15 +9,9 @@
   box-shadow: 2px 4px 3px rgba(0,0,0,0.15);
 }
 
-#placeholder-image {
-  position: relative;
-  max-height: 300px;
-  transition: opacity 2s ease-out;
-  object-fit: scale-down;
-  margin: 20px;
-
-  
-  box-shadow: 2px 4px 3px rgba(0,0,0,0.15);
+.preview-image-placeholder {
+  width:auto;
+  max-height: 200px;
 }
 
 #image-onLoad {

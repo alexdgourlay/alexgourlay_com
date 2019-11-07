@@ -32,7 +32,7 @@ const PreviewPane = (props) => {
                     </div>
 
                     <img
-                        id='preview-image'
+                        className='preview-image'
                         alt='Project Preview'
                         src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
 
@@ -53,7 +53,7 @@ const PreviewPane = (props) => {
             </div>
 
             <img
-                id='placeholder-image'
+                className='preview-image preview-image-placeholder'
                 alt='Me'
                 src={`${props.github_url}/resources/me.jpg`} />
         </div>

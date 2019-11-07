@@ -15,7 +15,7 @@ const HeadBar = (props) => (
             </Link>
         </div>
 
-        <div style={{ height: '40px' }} />
+        {/* <div style={{ height: '40px' }} /> */}
     </div>
 )
 

@@ -8,6 +8,8 @@ import projects from '../../data/projects.json';
 
 import './PageHome.css';
 
+const RES_DIR = 'resources/projects';
+
 class PageHome extends React.Component {
 
   constructor(props) {
@@ -44,7 +46,6 @@ class PageHome extends React.Component {
   handleTileEnter(project) {
     this.setState({
       projectHovered: project,
-      projectEntered: true,
     })
   }
 
@@ -56,35 +57,41 @@ class PageHome extends React.Component {
 
   render() {
 
+    var backgroundStyle = this.state.projectHovered 
+          ? {backgroundImage:`url(${this.state.github_url}/${RES_DIR}/${this.state.projectHovered.img})`}
+         : {};
+
     return (
       <div>
+        <div id="mobile-image-background" style={ backgroundStyle }/>
         <div id="PageHome">
+
           {/* <CrossHairs
             tileHovered={this.state.projectHovered} > */}
-          
-              <div className="tileGrid">
-                {
-                  this.state.projects.map((project) => (
 
-                    <div className="tileGridElement" key={project.id}>
-                      <ProjectTile
-                        key={project.id}
-                        project={project}
-                        match={this.props.match}
-                        handleTileEnter={this.handleTileEnter}
-                        handleTileExit={this.handleTileExit} />
-                    </div>
-                  ))
-                }
-              </div>
-              <div id="preview-container">
+          <div className="tileGrid">
+            {
+              this.state.projects.map((project) => (
 
-              <PreviewPane
-                github_url={this.state.github_url}
-                project={this.state.projectHovered} />
+                <div className="tileGridElement" key={project.id}>
+                  <ProjectTile
+                    key={project.id}
+                    project={project}
+                    match={this.props.match}
+                    handleTileEnter={this.handleTileEnter}
+                    handleTileExit={this.handleTileExit} />
                 </div>
+              ))
+            }
+          </div>
+          <div id="preview-container">
+{/* 
+            <PreviewPane
+              github_url={this.state.github_url}
+              project={this.state.projectHovered} /> */}
+          </div>
 
-      
+
           {/* </CrossHairs> */}
 
         </div>
