@@ -10,7 +10,8 @@
             "Installation"
         ],
         "dir": "resources/projects/0_AXPendula",
-        "img": "0_AXPendula/OPT_A_AXPendula.JPG"
+        "img": "0_AXPendula/OPT_A_AXPendula.JPG",
+        "summary": "An interactive audio visual installation - featured at London Design Festival"
     },
     {
         "id": "1",
@@ -24,7 +25,8 @@
             "Node js"
         ],
         "dir": "resources/projects/1_OrBit",
-        "img": "1_OrBit/OPT_A_OrBit.jpg"
+        "img": "1_OrBit/OPT_A_OrBit.jpg",
+        "summary": "A motion sensing MIDI controller"
     },
     {
         "id": "2",
@@ -37,7 +39,8 @@
             "PureData"
         ],
         "dir": "resources/projects/2_Horizons",
-        "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg"
+        "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg",
+        "summary": "Interactive sound assets in virtual reality"
     },
     {
         "id": "3",
@@ -50,7 +53,8 @@
             "Smart Healthcare",
             "Data Analysis"
         ],
-        "img": "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png"
+        "img": "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png",
+        "summary": "A smart healthcare app, integrating machine learning"
     },
  
     {
@@ -63,7 +67,8 @@
             "CAD Design",
             "Medical"
         ],
-        "img": "5_Vortech/OPT_vortech_combo.png"
+        "img": "5_Vortech/OPT_vortech_combo.png",
+        "summary": "Designing a low cost medical device"
     },
     {
         "id": "6",
@@ -75,6 +80,7 @@
             "CAD Design",
             "Eco Design"
         ],
-        "img": "6_SustainableToothbrush/OPT_BrushRender1.png"
+        "img": "6_SustainableToothbrush/OPT_BrushRender1.png",
+        "summary": "Making the tootbrush more sustainable"
     }
 ]

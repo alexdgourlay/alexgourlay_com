@@ -62,9 +62,13 @@ export default class ProjectTile extends React.Component {
         } else {
             return (
                 <div className={this.animation ? "tile" : "tile_noAnimation"}
-                    onMouseEnter={() => (this.props.handleTileEnter(project))}
+               
+                    onMouseOver={() => (this.props.handleTileEnter(project))}
                     onMouseLeave={() => (this.props.handleTileExit())}
-                    onClick={() => this.handleTileClick(project)}
+                    
+                    onTouchStart={() => (this.props.handleTileEnter(project))}
+
+                    onMouseUp={() => this.handleTileClick(project)}
                     ref={this.selector}
                 >
                     <div id="date">{project.date}</div>

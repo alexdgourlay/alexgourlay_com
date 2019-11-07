@@ -6,7 +6,7 @@ export const sketch = (p) => {
   let backColor = 255;
   let maxRadius = 8;
   let trackSpeed = 0.1;
-  let res = 30;
+  let res = 10;
 
 
   // let noiseVals;
@@ -20,6 +20,8 @@ export const sketch = (p) => {
     _width = p.windowWidth;
     _height = p.windowHeight;
     p.resizeCanvas(p.windowWidth, p.windowHeight);
+
+    p.setup();
   }
 
   p.setup = function () {
@@ -28,24 +30,18 @@ export const sketch = (p) => {
     p.background(backColor);
     p.noStroke();
 
-    for (var x = -_width / 2; x < _width / 2; x += res) {
-      for (var y = -_height / 2; y < _height / 2; y += res) {
-
-      }
-    }
-
     p.frameRate(20);
-  }
+    // }
 
 
-  var prevMouseX;
-  var prevMouseY;
+    // var prevMouseX;
+    // var prevMouseY;
 
-  // var val = 0;
+    // var val = 0;
 
-  p.draw = function () {
+    // p.draw = function () {
 
-    if (p.mouseY !== prevMouseY || p.mouseX !== prevMouseX) {
+    // if (p.mouseY !== prevMouseY || p.mouseX !== prevMouseX) {
 
       p.background(backColor);
 
@@ -59,19 +55,19 @@ export const sketch = (p) => {
 
           if (val < 100) {
 
-            p.fill(val);
+            p.fill(val / 2 + 100);
 
-            var rad = 30 * maxRadius / val * p.mouseY / _height;
+            var rad = 30 * maxRadius / val * 400 / _height;
 
             p.ellipse(x, y, rad, rad);
             // rect(x, y, rad, rad);
           }
         }
       }
-    }
+    // }
 
-    prevMouseX = p.mouseX;
-    prevMouseY = p.mouseY;
+    // prevMouseX = p.mouseX;
+    // prevMouseY = p.mouseY;
   }
 }
 

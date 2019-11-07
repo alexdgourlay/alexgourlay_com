@@ -38,7 +38,8 @@ br {
     min-width: 640;
     margin-left: auto;
     margin-right: auto;
-    padding: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     border-left: 20%;
     border-right: 20%;
     /* border: dashed black 1px; */
@@ -73,7 +74,7 @@ br {
 .p {
     max-width: 600px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 12pt;
     line-height: 1.5;
     border: dashed black 1 px;

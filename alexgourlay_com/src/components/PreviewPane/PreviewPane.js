@@ -22,47 +22,71 @@ const PreviewPane = (props) => {
                             loading={true} />
                     </div>
                 }>
-                <div style={{ backgroundSize:'inherit', filter: 'blur(4px)' }}>
-                    <h3 style={{ position: 'absolute', bottom: '10%', right: '10%', textAlign: 'right' }}>
-                        {props.project.tags}
-                    </h3>
+
+                <div id="preview-container">
+
+                    <div style={{ textAlign: "right" }}>
+                        <h1 id="preview-header">
+                            {props.project.summary}
+                        </h1>
+                    </div>
+
+                    <img
+                        id='preview-image'
+                        alt='Project Preview'
+                        src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
+
                 </div>
 
-                <img
-                    id='image'
-                    alt='Project Preview'
-                    src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
-
-            </Suspense>
+            </Suspense >
 
         )
     } else return (
-        <TextFiller />
+
+        <div id="preview-container">
+            <div style={{ textAlign: "right" }}>
+                <h1 id="preview-header">
+                    Hello and welcome to my portfolio site, to the left you will
+                    find a selection of different projects I have worked on over
+                    the past few years. Feel free to explore! Alex. 
+                        </h1>
+            </div>
+
+            <img
+                id='placeholder-image'
+                alt='Me'
+                src={`${props.github_url}/resources/me.jpg`} />
+        </div>
     );
 }
 
 
 
-const TextFiller = () => {
-    return (
-        <div style={{}}>
-            <p
-                style={{
-                    "textAlign": "justified center",
-                    "maxWidth": "400px",
-                    "fontSize": "40px",
-                    "paddingTop": "30px",
-                    "paddingRight": "40px",
-                    "fontWeight": "500",
-                    "fontColor": "white"
-                }}>
-                Hello and welcome to my portfolio site, to find out
-            more about me and my work, click <b style={{ "color": "red" }}>here</b>, otherwise
-                            hover and select a project from the left. 👈
-        </p>
-        </div>
-    )
-}
+// const TextFiller = (props) => {
+//     return (
+//         <div style={{}}>
+//             {/* <p
+//                 style={{
+//                     "textAlign": "justified center",
+//                     "maxWidth": "400px",
+//                     "fontSize": "40px",
+//                     "paddingTop": "30px",
+//                     "paddingRight": "40px",
+//                     "fontWeight": "500",props
+//                     "fontColor": "white"
+//                 }}>
+//                 Hello and welcome to my portfolio site, to find out
+//             more about me and my work, click <b style={{ "color": "red" }}>here</b>, otherwise
+//                             hover and select a project from the left. 👈
+//         </p> */}
+
+//             <img
+//                 id='placeholder-image'
+//                 alt='Me'
+//                 src={`${props.github_url}/resources/me.jpg`} />
+//         </div>
+//     )
+// }
 
 
 export default PreviewPane;
