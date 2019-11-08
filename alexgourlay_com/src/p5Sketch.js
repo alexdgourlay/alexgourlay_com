@@ -6,7 +6,7 @@ export const sketch = (p) => {
   let backColor = 255;
   let maxRadius = 8;
   let trackSpeed = 0.1;
-  let res = 10;
+  let res = 20;
 
 
   // let noiseVals;

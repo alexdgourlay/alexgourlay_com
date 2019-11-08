@@ -44,7 +44,7 @@ const PreviewPane = (props) => {
     } else return (
 
         <div id="preview-container">
-            <div style={{ textAlign: "right", background: "red" }}>
+            <div style={{ textAlign: "right" }}>
                 <h1 id="preview-header">
                     Hello and welcome to my portfolio site, to the left you will
                     find a selection of different projects I have worked on over

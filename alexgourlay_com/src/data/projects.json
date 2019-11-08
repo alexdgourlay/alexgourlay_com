@@ -5,13 +5,13 @@
         "title": "AXPendula",
         "enabled" : true,
         "tags": [
-            "Audio Visual",
-            "Max MSP",
-            "Installation"
+            "AV Installation",
+            "3D Modelling",
+            "Max MSP"
         ],
         "dir": "resources/projects/0_AXPendula",
         "img": "0_AXPendula/OPT_A_AXPendula.JPG",
-        "summary": "An interactive audio visual installation - featured at London Design Festival"
+        "summary": "An interactive audio visual installation, featured at London Design Festival"
     },
     {
         "id": "1",
@@ -20,13 +20,12 @@
         "enabled" : true,
         "tags": [
             "Product Design",
-            "Music Tech",
             "Ableton",
             "Node js"
         ],
         "dir": "resources/projects/1_OrBit",
         "img": "1_OrBit/OPT_A_OrBit.jpg",
-        "summary": "A motion sensing MIDI controller"
+        "summary": "A motion sensing controller for music production software"
     },
     {
         "id": "2",
@@ -35,12 +34,12 @@
         "enabled" : true,
         "tags": [
             "Virtual Reality",
-            "Music Tech",
+            "Unity",
             "PureData"
         ],
         "dir": "resources/projects/2_Horizons",
         "img": "2_Horizons/OPT_HD_ShoalFishStill.jpg",
-        "summary": "Interactive sound assets in virtual reality"
+        "summary": "Interactive sound objects in virtual reality"
     },
     {
         "id": "3",
@@ -49,12 +48,12 @@
         "enabled" : true,
         "dir": "resources/projects/3_VitaRun",
         "tags": [
-            "Android",
+            "Android Dev",
             "Smart Healthcare",
             "Data Analysis"
         ],
         "img": "3_VitaRun/OPT_VitaRun_Over_Shoulder_Crop.png",
-        "summary": "A smart healthcare app, integrating machine learning"
+        "summary": "A smart healthcare app that integrates pressure sensing insoles and machine learning"
     },
  
     {
@@ -64,11 +63,12 @@
         "enabled" : true,
         "dir": "resources/projects/5_Vortech",
         "tags": [
-            "CAD Design",
+            "3D Modelling",
+            "Product Design",
             "Medical"
         ],
         "img": "5_Vortech/OPT_vortech_combo.png",
-        "summary": "Designing a low cost medical device"
+        "summary": "A low cost solution for the measurement of lung volume in medical settings"
     },
     {
         "id": "6",
@@ -77,10 +77,10 @@
         "enabled" : true,
         "dir": "resources/projects/6_SustainableToothbrush",
         "tags": [
-            "CAD Design",
-            "Eco Design"
+            "3D Modelling",
+            "Manufacturing Analysis"
         ],
         "img": "6_SustainableToothbrush/OPT_BrushRender1.png",
-        "summary": "A more sustainable toothbrush design, featuring replaceable heads"
+        "summary": "A more sustainable toothbrush design, featuring replaceable head storage"
     }
 ]
