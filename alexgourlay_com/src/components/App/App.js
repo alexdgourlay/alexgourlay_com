@@ -23,7 +23,7 @@ class App extends React.Component {
         <HeadBar />
         <div>
           <Switch>
-            <Route exact path="/" component={PageHome} />
+            <Route exact path='/' component={PageHome} />
             <Route exact path="/AboutMe" component={PageAboutMe} />
             <Route exact path="/Projects/:projectKey" component={PageProjectTemplate} />
             <Route component={Page404} />

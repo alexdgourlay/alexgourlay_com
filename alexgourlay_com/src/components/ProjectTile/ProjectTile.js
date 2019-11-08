@@ -48,15 +48,12 @@ export default class ProjectTile extends React.Component {
         let project = this.props.project;
  
         if (this.state.redirect) {
+
+            window.history.pushState({},'/');
+
             return (
                 <Redirect to={{
                     pathname: `Projects/${project.id}`,
-
-                    // Attempt to supply project state to component
-                    // state: {
-                    //     message: 'Hello Alex',
-                    //     messageB : 3
-                    // }
                 }} />
             )
         } else {
