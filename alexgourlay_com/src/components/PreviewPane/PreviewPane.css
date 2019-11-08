@@ -1,6 +1,6 @@
 .preview-image {
   position: relative;
-  width: 90%;
+  max-width: 90%;
   max-height: 800px;
   transition: opacity 2s ease-out;
   object-fit: scale-down;

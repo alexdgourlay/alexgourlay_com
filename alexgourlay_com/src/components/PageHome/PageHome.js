@@ -28,6 +28,13 @@ class PageHome extends React.Component {
       this.setState({ isMobile: true });
     }
 
+
+    window.onresize = (event) => {
+      this.setState({
+        windowWidth: window.innerWidth
+      })
+    };
+
     this.handleTileEnter = this.handleTileEnter.bind(this);
     this.handleTileExit = this.handleTileExit.bind(this);
   }
@@ -38,9 +45,9 @@ class PageHome extends React.Component {
 
     // Load Project data into state.
     this.setState({
-      projects: projects
+      projects: projects,
+      windowWidth: window.innerWidth
     })
-
   }
 
   handleTileEnter(project) {
@@ -57,45 +64,53 @@ class PageHome extends React.Component {
 
   render() {
 
-    var backgroundStyle = this.state.projectHovered 
-          ? {backgroundImage:`url(${this.state.github_url}/${RES_DIR}/${this.state.projectHovered.img})`}
-         : {};
+    var backgroundStyle = this.state.projectHovered
+      ? { backgroundImage: `url(${this.state.github_url}/${RES_DIR}/${this.state.projectHovered.img})` }
+      : {};
+
+    var previewPane;
+    var mobileBackground;
+
+    if (this.state.windowWidth < 800) {
+      previewPane = null;
+
+      mobileBackground = <div id="mobile-image-background" style={backgroundStyle} />;
+    } else {
+
+      previewPane = <PreviewPane
+        github_url={this.state.github_url}
+        project={this.state.projectHovered} />;
+
+      mobileBackground = null;
+
+    }
 
     return (
-      <div>
-        <div id="mobile-image-background" style={ backgroundStyle }/>
-        <div id="PageHome">
 
-          {/* <CrossHairs
-            tileHovered={this.state.projectHovered} > */}
+      <div id="PageHome">
+        {mobileBackground}
 
-          <div className="tileGrid">
-            {
-              this.state.projects.map((project) => (
+        <div className="tileGrid">
+          {
+            this.state.projects.map((project) => (
 
-                <div className="tileGridElement" key={project.id}>
-                  <ProjectTile
-                    key={project.id}
-                    project={project}
-                    match={this.props.match}
-                    handleTileEnter={this.handleTileEnter}
-                    handleTileExit={this.handleTileExit} />
-                </div>
-              ))
-            }
-          </div>
-          <div id="preview-container">
-{/* 
-            <PreviewPane
-              github_url={this.state.github_url}
-              project={this.state.projectHovered} /> */}
-          </div>
-
-
-          {/* </CrossHairs> */}
-
+              <div className="tileGridElement" key={project.id}>
+                <ProjectTile
+                  key={project.id}
+                  project={project}
+                  match={this.props.match}
+                  handleTileEnter={this.handleTileEnter}
+                  handleTileExit={this.handleTileExit} />
+              </div>
+            ))
+          }
         </div>
+        <div id="preview-container">
+          {previewPane}
+        </div>
+
       </div>
+
     );
   }
 }
