@@ -108,7 +108,6 @@ class PageHome extends React.Component {
         <div id="preview-container">
           {previewPane}
         </div>
-
       </div>
 
     );

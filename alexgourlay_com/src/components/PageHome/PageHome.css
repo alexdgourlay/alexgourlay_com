@@ -42,7 +42,7 @@
     height: 100%;
     max-width: 50%;
     width:100%;
-    /* z-index: 99; */
+    z-index: -1;
     align-content: right;
     padding-top: 60px;
 
