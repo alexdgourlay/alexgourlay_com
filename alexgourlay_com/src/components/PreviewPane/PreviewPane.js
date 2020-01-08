@@ -1,66 +1,42 @@
-import React, { Suspense } from 'react';
-import SyncLoader from 'react-spinners/SyncLoader';
+import React from 'react'
 
-import './PreviewPane.css';
+import "./PreviewPane.css";
 
-const RES_DIR = 'resources/projects';
+const RES_DIR = "resources/projects";
 
 const PreviewPane = (props) => {
 
-    if (props.project !== null) {
+  if (props.project !== null) {
+    return (
+      <div id="preview-container">
+        <div style={{ textAlign: "right" }}>
+          <h1 id="preview-header">{props.project.summary}</h1>
+        </div> 
 
-        return (
-            <Suspense
-                fallback={
-
-                    <div>
-                        <SyncLoader
-                            css={{ position: 'fixed', top: '50%', left: '50%', marginRight: '100px', marginBottom: '50px' }}
-                            sizeUnit={'px'}
-                            size={10}
-                            color={'#676767'}
-                            loading={true} />
-                    </div>
-                }>
-
-                <div id="preview-container">
-
-                    <div style={{ textAlign: "right" }}>
-                        <h1 id="preview-header">
-                            {props.project.summary}
-                        </h1>
-                    </div>
-
-                    <img
+        <img
                         className='preview-image'
                         alt='Project Preview'
                         src={`${props.github_url}/${RES_DIR}/${props.project.img}`} />
-
-                </div>
-
-            </Suspense >
-
-        )
-    } else return (
-
-        <div id="preview-container">
-            <div style={{ textAlign: "right" }}>
-                <h1 id="preview-header">
-                    Hello and welcome to my portfolio site, to the left you will
-                    find a selection of different projects I have worked on over
-                    the past few years. Feel free to explore! Alex. 
-                        </h1>
-            </div>
-
-            <img
-                className='preview-image preview-image-placeholder'
-                alt='Me'
-                src={`${props.github_url}/resources/me.jpg`} />
-        </div>
+      </div>
     );
-}
+  } else
+    return (
+      <div id="preview-container">
+        <div style={{ textAlign: "right" }}>
+          <h1 id="preview-header">
+            Welcome to my portfolio site! To the left <span role="img" aria-label="left-hand">👈</span> you will find a selection of different projects I have worked on
+            over the past few years. Feel free to explore, Alex.
+          </h1>
+        </div>
 
-
+        <img
+          className="preview-image preview-image-placeholder"
+          alt="Me"
+          src={`${props.github_url}/resources/me.jpg`}
+        />
+      </div>
+    );
+};
 
 // const TextFiller = (props) => {
 //     return (
@@ -87,6 +63,5 @@ const PreviewPane = (props) => {
 //         </div>
 //     )
 // }
-
 
 export default PreviewPane;

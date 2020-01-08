@@ -30,7 +30,7 @@ const ConnectFooter = (props) => {
             </div>
             <div>
                 <p className="footer-text">
-                    Designed and built by me, using React.js
+                    Built by me, using React.js
                 </p>
             </div>
         </div>

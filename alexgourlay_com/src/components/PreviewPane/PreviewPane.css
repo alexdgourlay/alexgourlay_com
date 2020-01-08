@@ -2,7 +2,7 @@
   position: relative;
   max-width: 90%;
   max-height: 60vh;
-  transition: opacity 2s ease-out;
+  /* transition: opacity 2s ease-out; */
   object-fit: scale-down;
   margin: 40px;
 
@@ -16,7 +16,7 @@
 
 #image-onLoad {
   width: 100%;
-  transition: opacity 2s ease-out;
+  /* transition: opacity 2s ease-out; */
   object-fit: scale-down;
   border-width: 40px;
   border-style: solid;
